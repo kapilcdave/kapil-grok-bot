@@ -1,0 +1,87 @@
+36620 creates in window, 15883 with a linked post, 23738 mints with trades
+28174 launches after drops; 13074 with >=2 trades in the first hour
+
+== ALL launches  (n launches 28174)
+  buy create+  0s  n=15292  win  13.2% [12.6%,13.7%]  stop-first  0.6%  unresolved 86.2%
+  buy create+  5s  n=11748  win   4.6% [ 4.3%, 5.0%]  stop-first 10.8%  unresolved 84.6%
+  buy create+ 15s  n=10577  win   3.4% [ 3.1%, 3.7%]  stop-first  9.1%  unresolved 87.5%
+  buy create+ 30s  n= 9121  win   2.2% [ 1.9%, 2.5%]  stop-first  7.4%  unresolved 90.4%
+  buy create+ 60s  n= 6925  win   0.9% [ 0.7%, 1.2%]  stop-first  5.2%  unresolved 93.9%
+  buy create+120s  n= 2540  win   0.0% [ 0.0%, 0.2%]  stop-first  0.8%  unresolved 99.1%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+== launches linking a post  (n launches 15655)
+  buy create+  0s  n= 7070  win  18.6% [17.7%,19.5%]  stop-first  0.8%  unresolved 80.6%
+  buy create+  5s  n= 5735  win   6.8% [ 6.2%, 7.5%]  stop-first 16.9%  unresolved 76.3%
+  buy create+ 15s  n= 5039  win   4.9% [ 4.3%, 5.5%]  stop-first 14.5%  unresolved 80.6%
+  buy create+ 30s  n= 4273  win   3.3% [ 2.8%, 3.9%]  stop-first 11.6%  unresolved 85.0%
+  buy create+ 60s  n= 3213  win   1.3% [ 1.0%, 1.8%]  stop-first  7.5%  unresolved 91.2%
+  buy create+120s  n= 1287  win   0.1% [ 0.0%, 0.4%]  stop-first  1.1%  unresolved 98.8%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+== no post  (n launches 12519)
+  buy create+  0s  n= 8222  win   8.5% [ 7.9%, 9.1%]  stop-first  0.5%  unresolved 91.0%
+  buy create+  5s  n= 6013  win   2.6% [ 2.2%, 3.0%]  stop-first  4.8%  unresolved 92.6%
+  buy create+ 15s  n= 5538  win   2.0% [ 1.7%, 2.4%]  stop-first  4.2%  unresolved 93.8%
+  buy create+ 30s  n= 4848  win   1.2% [ 1.0%, 1.6%]  stop-first  3.7%  unresolved 95.0%
+  buy create+ 60s  n= 3712  win   0.6% [ 0.4%, 0.9%]  stop-first  3.2%  unresolved 96.2%
+  buy create+120s  n= 1253  win   0.0% [ 0.0%, 0.3%]  stop-first  0.6%  unresolved 99.4%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+== post age at create in [-1000000000.0,0)s  (n launches 930)
+  buy create+  0s  n=  554  win  28.5% [24.9%,32.4%]  stop-first  2.2%  unresolved 69.3%
+  buy create+  5s  n=  533  win   8.6% [ 6.5%,11.3%]  stop-first 27.0%  unresolved 64.4%
+  buy create+ 15s  n=  486  win   5.8% [ 4.0%, 8.2%]  stop-first 21.2%  unresolved 73.0%
+  buy create+ 30s  n=  421  win   3.6% [ 2.2%, 5.8%]  stop-first 18.8%  unresolved 77.7%
+  buy create+ 60s  n=  311  win   1.0% [ 0.3%, 2.8%]  stop-first 10.9%  unresolved 88.1%
+  buy create+120s  n=  132  win   0.0% [ 0.0%, 2.8%]  stop-first  1.5%  unresolved 98.5%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+== post age at create in [0,5)s  (n launches 1787)
+  buy create+  0s  n=  581  win  26.2% [22.8%,29.9%]  stop-first  2.4%  unresolved 71.4%
+  buy create+  5s  n=  530  win   6.0% [ 4.3%, 8.4%]  stop-first 25.8%  unresolved 68.1%
+  buy create+ 15s  n=  468  win   3.6% [ 2.3%, 5.7%]  stop-first 24.1%  unresolved 72.2%
+  buy create+ 30s  n=  399  win   3.3% [ 1.9%, 5.5%]  stop-first 18.0%  unresolved 78.7%
+  buy create+ 60s  n=  307  win   1.0% [ 0.3%, 2.8%]  stop-first  9.4%  unresolved 89.6%
+  buy create+120s  n=  140  win   0.7% [ 0.1%, 3.9%]  stop-first  0.0%  unresolved 99.3%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+== post age at create in [5,15)s  (n launches 1606)
+  buy create+  0s  n=  813  win  24.0% [21.2%,27.0%]  stop-first  1.0%  unresolved 75.0%
+  buy create+  5s  n=  726  win   8.8% [ 7.0%,11.1%]  stop-first 20.9%  unresolved 70.2%
+  buy create+ 15s  n=  642  win   6.2% [ 4.6%, 8.4%]  stop-first 17.3%  unresolved 76.5%
+  buy create+ 30s  n=  541  win   3.9% [ 2.6%, 5.9%]  stop-first 15.0%  unresolved 81.1%
+  buy create+ 60s  n=  427  win   1.6% [ 0.8%, 3.3%]  stop-first  7.7%  unresolved 90.6%
+  buy create+120s  n=  199  win   0.0% [ 0.0%, 1.9%]  stop-first  0.5%  unresolved 99.5%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+== post age at create in [15,60)s  (n launches 4146)
+  buy create+  0s  n= 1743  win  22.9% [21.0%,25.0%]  stop-first  0.8%  unresolved 76.2%
+  buy create+  5s  n= 1491  win   8.0% [ 6.8%, 9.5%]  stop-first 19.7%  unresolved 72.3%
+  buy create+ 15s  n= 1296  win   5.9% [ 4.8%, 7.4%]  stop-first 15.5%  unresolved 78.5%
+  buy create+ 30s  n= 1093  win   5.1% [ 4.0%, 6.6%]  stop-first 12.6%  unresolved 82.3%
+  buy create+ 60s  n=  837  win   1.6% [ 0.9%, 2.6%]  stop-first  7.8%  unresolved 90.7%
+  buy create+120s  n=  357  win   0.0% [-0.0%, 1.1%]  stop-first  0.6%  unresolved 99.4%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+== post age at create in [60,600)s  (n launches 4839)
+  buy create+  0s  n= 2104  win  16.4% [14.9%,18.0%]  stop-first  0.2%  unresolved 83.4%
+  buy create+  5s  n= 1608  win   6.9% [ 5.8%, 8.2%]  stop-first 13.0%  unresolved 80.1%
+  buy create+ 15s  n= 1393  win   5.0% [ 4.0%, 6.3%]  stop-first 12.6%  unresolved 82.3%
+  buy create+ 30s  n= 1166  win   2.5% [ 1.7%, 3.5%]  stop-first  9.6%  unresolved 87.9%
+  buy create+ 60s  n=  846  win   1.4% [ 0.8%, 2.5%]  stop-first  8.3%  unresolved 90.3%
+  buy create+120s  n=  323  win   0.0% [ 0.0%, 1.2%]  stop-first  2.5%  unresolved 97.5%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+== post age at create in [600,1000000000.0)s  (n launches 2347)
+  buy create+  0s  n= 1275  win   5.2% [ 4.1%, 6.5%]  stop-first  0.5%  unresolved 94.4%
+  buy create+  5s  n=  847  win   2.0% [ 1.3%, 3.2%]  stop-first  4.4%  unresolved 93.6%
+  buy create+ 15s  n=  754  win   1.9% [ 1.1%, 3.1%]  stop-first  3.8%  unresolved 94.3%
+  buy create+ 30s  n=  653  win   1.2% [ 0.6%, 2.4%]  stop-first  2.3%  unresolved 96.5%
+  buy create+ 60s  n=  485  win   1.0% [ 0.4%, 2.4%]  stop-first  1.9%  unresolved 97.1%
+  buy create+120s  n=  136  win   0.0% [ 0.0%, 2.7%]  stop-first  0.7%  unresolved 99.3%
+  buy create+300s  n=    0  win   0.0% [ 0.0%, 0.0%]  stop-first  0.0%  unresolved  0.0%
+
+JUMP (price >= 2x the create+5s price): 391 of 15655 post-linked launches
+  seconds from POST to jump   p10/25/50/75/90: [23.7, 44.1, 82.9, 139.0, 238.9]
+  seconds from CREATE to jump p10/25/50/75/90: [11, 20, 36, 64, 96]

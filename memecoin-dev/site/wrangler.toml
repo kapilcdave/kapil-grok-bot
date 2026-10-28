@@ -1,0 +1,11 @@
+name = "coins"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+[vars]
+DEV_WALLET = "DZo2AkoC418KFiqFDwqwwsiWicVX6wDJHFHgRvh3j1RS"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"   # /treasury renders public/treasury.json; the raw file stays at /treasury.json

@@ -1,0 +1,19 @@
+=== WITHIN-CREATOR: does the SAME operator earn more on its bigger-dose launches? ===
+creators with launches in BOTH dose regimes: 168
+  mean P&L on their <=1 SOL launches : +0.2453 SOL
+  mean P&L on their >=2 SOL launches : +0.9447 SOL
+  PAIRED difference (hi - lo)        : +0.6994 [+0.3663,+1.0613]
+  median paired difference           : +0.0545   share positive 52.4%
+
+POOLED slope (dev P&L per SOL of create-block buy): -0.0105
+WITHIN-CREATOR slope (creator fixed effects):       +0.1158
+median per-creator slope (>=5 launches, n=687): -0.0203 [-0.0224,-0.0169] share positive 35.1%
+
+=== creators with exactly ONE launch in the corpus (our situation): n=22,542 ===
+   0-0.1 n= 4,709 mean  +0.0330 median  -0.0001 P(>0) 0.140 p10  -0.0025
+ 0.1-0.5 n= 3,241 mean  +0.3483 median  -0.0030 P(>0) 0.440 p10  -0.0123
+   0.5-1 n= 5,513 mean  +0.9264 median  +0.0267 P(>0) 0.569 p10  -0.0250
+     1-2 n= 3,343 mean  +0.5783 median  +0.0868 P(>0) 0.645 p10  -0.0476
+     2-5 n= 4,446 mean  +1.2701 median  +0.7314 P(>0) 0.744 p10  -0.1152
+    5-10 n=   455 mean  +2.7105 median  +1.2594 P(>0) 0.699 p10  -0.1728
+     >10 n=   768 mean  +0.4567 median  -2.1251 P(>0) 0.168 p10  -2.1251

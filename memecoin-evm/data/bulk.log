@@ -1,0 +1,12 @@
+already have 37 pairs
+  factory 127111400 FAIL {'code': -32005, 'message': 'limit excee
+  factory 127111800 FAIL HTTP Error 400: Bad Request
+  factory 127112200 FAIL {'code': -32005, 'message': 'limit excee
+  factory 127112600 FAIL <urlopen error [Errno 8] nodename nor se
+  factory 127113000 FAIL HTTP Error 403: Forbidden
+new candidate pairs: 137
+  [0/137]
+  [20/137]
+  [40/137]
+  [60/137]
+COLLECT DONE

@@ -1,0 +1,28 @@
+[Unit]
+Description=bankr-pipeline - DexScreener narrative -> concept -> art -> X -> Bankr $0 launch (Base)
+After=network-online.target
+Wants=network-online.target
+# Never give up: a dud cycle is normal, so restart counting must not latch the unit off.
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+# Its own tree and venv, so installing it touches nothing else on the box.
+WorkingDirectory=%h/bankr
+EnvironmentFile=%h/.devbot/.env
+Environment=PYTHONUNBUFFERED=1
+# The loop swallows per-cycle errors itself; the gates (STOP file, BANKR_MAX_PER_DAY,
+# BANKR_GAP_MIN, X_MAX_POSTS_PER_DAY) are re-read from the env every cycle.
+ExecStart=%h/bankr/.venv/bin/python bankr_pipeline.py loop --live
+Restart=always
+RestartSec=60
+TimeoutStopSec=20
+# These boxes have under 1 GB shared with a recorder/gateway; stay behind them.
+MemoryMax=180M
+MemoryHigh=140M
+Nice=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,16 @@
+#### tape-20261010T225715Z.jsonl.gz  (SOL $107; peak mcap in the first hour)
+all launches (after warm-up)       n 23,034 | median peak $   3,042 | P(peak>=$40k)  2.12% | P(>=$100k)  0.00% | mean fee 0.0820 SOL | median fee 0.00006
+LEADER: first on a new term        n    574 | median peak $   4,164 | P(peak>=$40k)  5.92% | P(>=$100k)  0.00% | mean fee 0.4268 SOL | median fee 0.03128
+FOLLOWER: later coin on that term  n  4,881 | median peak $   2,995 | P(peak>=$40k)  0.88% | P(>=$100k)  0.00% | mean fee 0.0966 SOL | median fee 0.00000
+first on new term, UNCONDITIONAL   n  9,323 | median peak $   3,161 | P(peak>=$40k)  1.95% | P(>=$100k)  0.00% | mean fee 0.0849 SOL | median fee 0.00090
+  ...and the term is a known word  n  5,994 | median peak $   3,142 | P(peak>=$40k)  2.12% | P(>=$100k)  0.00% | mean fee 0.0847 SOL | median fee 0.00064
+P(a first-on-new-term coin's term catches on) = 6.16%
+of 489 coins that reached $40k: 34 leaders, 43 followers of a caught-on term
+#### tape-20261011T225728Z.jsonl.gz  (SOL $107; peak mcap in the first hour)
+all launches (after warm-up)       n 28,422 | median peak $   3,015 | P(peak>=$40k)  1.95% | P(>=$100k)  0.00% | mean fee 0.0739 SOL | median fee 0.00000
+LEADER: first on a new term        n    712 | median peak $   3,551 | P(peak>=$40k)  5.76% | P(>=$100k)  0.00% | mean fee 0.3613 SOL | median fee 0.01418
+FOLLOWER: later coin on that term  n  6,457 | median peak $   2,996 | P(peak>=$40k)  0.91% | P(>=$100k)  0.00% | mean fee 0.0608 SOL | median fee 0.00000
+first on new term, UNCONDITIONAL   n 10,252 | median peak $   3,186 | P(peak>=$40k)  2.09% | P(>=$100k)  0.00% | mean fee 0.0859 SOL | median fee 0.00081
+  ...and the term is a known word  n  6,611 | median peak $   3,164 | P(peak>=$40k)  2.15% | P(>=$100k)  0.00% | mean fee 0.0861 SOL | median fee 0.00074
+P(a first-on-new-term coin's term catches on) = 6.94%
+of 553 coins that reached $40k: 41 leaders, 59 followers of a caught-on term

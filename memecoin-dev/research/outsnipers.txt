@@ -1,0 +1,44 @@
+
+#### tape-20261010T225715Z.jsonl.gz: block wallets 7,450; creators/wallet p50 1 p90 5 p99 57 max 500
+-- TH=20: 211 broad wallets carry 44.8% of launch-block buyer slots
+[broad snipers only] 3,527 launches -- bucket: n | median fee | median NET | mean NET | P(NET>0)
+  none         961 | 0.03283 | +0.02723 | +0.12749 | 83.9%
+  (0,0.1]      306 | 0.00501 | -0.00156 | +0.02466 | 47.7%
+  (0.1,0.5]    463 | 0.01039 | +0.00219 | +0.05963 | 51.2%
+  (0.5,1]      704 | 0.01938 | +0.03683 | +0.27244 | 64.8%
+  (1,2]        600 | 0.03460 | +0.11641 | +0.41674 | 76.0%
+  >2           493 | 0.07233 | +0.41034 | +1.68978 | 74.0%
+   P(broad sniper in launch block) overall 20.7%
+   within-creator LPM (2,117 creators, 19,928 launches): x_post +2.5pp (t +2.2), x_profile +1.1pp (t +0.6), website -0.8pp (t -0.7), telegram -3.4pp (t -1.1), description +0.5pp (t +0.9), all_caps -1.1pp (t -1.8), ticker_eq_name +0.6pp (t +1.0), non_ascii -1.1pp (t -0.9), us_hours -5.5pp (t -3.2), non_ipfs_host +0.7pp (t +0.3), first_in_tape +5.9pp (t +7.0), devbuy_0_0.1 +10.8pp (t +1.2), devbuy_0.1_0.5 +12.6pp (t +1.4), devbuy_0.5_1 +11.4pp (t +1.2), devbuy_1_2 +13.9pp (t +1.5), devbuy_gt2 +13.2pp (t +1.4)
+-- TH=50: 85 broad wallets carry 30.6% of launch-block buyer slots
+[broad snipers only] 2,394 launches -- bucket: n | median fee | median NET | mean NET | P(NET>0)
+  none         449 | 0.03174 | +0.02612 | +0.10521 | 89.3%
+  (0,0.1]      262 | 0.00554 | -0.00075 | +0.02484 | 49.2%
+  (0.1,0.5]    332 | 0.00830 | -0.00610 | +0.01657 | 43.1%
+  (0.5,1]      582 | 0.01773 | +0.02763 | +0.22178 | 60.5%
+  (1,2]        474 | 0.02661 | +0.09558 | +0.36449 | 75.5%
+  >2           295 | 0.05307 | +0.14116 | +1.23259 | 68.5%
+   P(broad sniper in launch block) overall 17.4%
+   within-creator LPM (2,117 creators, 19,928 launches): x_post +2.4pp (t +2.3), x_profile +1.9pp (t +1.2), website -1.2pp (t -1.1), telegram -5.0pp (t -1.7), description +0.3pp (t +0.5), all_caps -0.9pp (t -1.4), ticker_eq_name +0.6pp (t +1.0), non_ascii -1.5pp (t -1.1), us_hours -5.4pp (t -3.0), non_ipfs_host -2.2pp (t -0.7), first_in_tape +5.9pp (t +7.1), devbuy_0_0.1 +11.8pp (t +1.3), devbuy_0.1_0.5 +13.3pp (t +1.5), devbuy_0.5_1 +11.9pp (t +1.2), devbuy_1_2 +12.8pp (t +1.4), devbuy_gt2 +11.8pp (t +1.2)
+
+#### tape-20261011T225728Z.jsonl.gz: block wallets 11,433; creators/wallet p50 1 p90 5 p99 33 max 588
+-- TH=20: 232 broad wallets carry 35.8% of launch-block buyer slots
+[broad snipers only] 3,510 launches -- bucket: n | median fee | median NET | mean NET | P(NET>0)
+  none       1,460 | 0.00157 | -0.00410 | +0.08046 | 46.0%
+  (0,0.1]      183 | 0.00904 | +0.00319 | +0.02288 | 59.6%
+  (0.1,0.5]    307 | 0.01434 | +0.01070 | +0.19076 | 69.1%
+  (0.5,1]      600 | 0.02280 | +0.04594 | +0.21315 | 67.5%
+  (1,2]        488 | 0.03566 | +0.09319 | +0.30447 | 74.0%
+  >2           472 | 0.07852 | +0.26792 | +1.95708 | 72.0%
+   P(broad sniper in launch block) overall 21.0%
+   within-creator LPM (2,293 creators, 19,480 launches): x_post -0.2pp (t -0.1), x_profile -3.7pp (t -2.3), website +4.0pp (t +3.2), telegram +0.1pp (t +0.0), description +0.7pp (t +1.0), all_caps -0.5pp (t -1.0), ticker_eq_name +1.0pp (t +1.7), non_ascii -0.6pp (t -0.7), us_hours +1.0pp (t +1.4), non_ipfs_host +0.7pp (t +0.2), first_in_tape +4.6pp (t +6.2), devbuy_0_0.1 +6.7pp (t +1.6), devbuy_0.1_0.5 +8.7pp (t +2.0), devbuy_0.5_1 +11.8pp (t +2.9), devbuy_1_2 +15.8pp (t +3.0), devbuy_gt2 +20.0pp (t +2.9)
+-- TH=50: 71 broad wallets carry 22.0% of launch-block buyer slots
+[broad snipers only] 1,932 launches -- bucket: n | median fee | median NET | mean NET | P(NET>0)
+  none         766 | 0.00001 | -0.00559 | +0.03560 | 29.4%
+  (0,0.1]      139 | 0.01348 | +0.00637 | +0.01967 | 68.3%
+  (0.1,0.5]    223 | 0.01061 | +0.00740 | +0.15416 | 65.0%
+  (0.5,1]      342 | 0.02077 | +0.03813 | +0.20899 | 67.0%
+  (1,2]        275 | 0.03376 | +0.08301 | +0.24283 | 69.8%
+  >2           187 | 0.04519 | +0.07443 | +1.16371 | 57.2%
+   P(broad sniper in launch block) overall 15.9%
+   within-creator LPM (2,293 creators, 19,480 launches): x_post -0.1pp (t -0.1), x_profile -0.5pp (t -0.3), website +2.8pp (t +2.3), telegram -0.2pp (t -0.1), description +0.3pp (t +0.5), all_caps -0.6pp (t -1.2), ticker_eq_name +0.5pp (t +0.8), non_ascii -0.6pp (t -0.8), us_hours +0.2pp (t +0.2), non_ipfs_host +6.7pp (t +1.7), first_in_tape +3.5pp (t +4.8), devbuy_0_0.1 +6.7pp (t +2.0), devbuy_0.1_0.5 +8.2pp (t +2.4), devbuy_0.5_1 +10.7pp (t +3.1), devbuy_1_2 +14.2pp (t +3.2), devbuy_gt2 +17.0pp (t +3.1)

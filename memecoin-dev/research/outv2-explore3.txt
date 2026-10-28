@@ -1,0 +1,22 @@
+tools (n>=200): ipfs.io n=22783 meanH 1.59 P5 4.8%; metadata.j7tracker.io n=5409 meanH 4.15 P5 10.9%; meta.uxento.io n=1629 meanH 6.35 P5 14.5%; pump.mypinata.cloud n=1119 meanH 3.38 P5 11.4%; m.rapidlaunch.io n=617 meanH 6.59 P5 17.7%; md.sdfgsdfsdf.uk n=277 meanH 9.47 P5 17.7%; storage.googleapis.com n=229 meanH 1.26 P5 5.2%
+== tape-20261011T225728Z.jsonl.gz: creator FE, 2,293 creators, 19,480 launches
+  x_post        +0.1491 se 0.0337 t  +4.4  x1.16
+  x_profile     +0.0471 se 0.0391 t  +1.2  x1.05
+  website       +0.0271 se 0.0366 t  +0.7  x1.03
+  description   -0.0120 se 0.0154 t  -0.8  x0.99
+  devbuy_le0.1  +0.0913 se 0.0885 t  +1.0  x1.10
+  devbuy_0.1_1  +0.1125 se 0.0886 t  +1.3  x1.12
+  devbuy_gt1    +0.1873 se 0.1065 t  +1.8  x1.21
+  all_caps      -0.0236 se 0.0106 t  -2.2  x0.98
+  us_hours      -0.0774 se 0.0192 t  -4.0  x0.93
+tools (n>=200): ipfs.io n=23507 meanH 1.53 P5 4.8%; metadata.j7tracker.io n=4809 meanH 4.37 P5 11.8%; meta.uxento.io n=1208 meanH 7.53 P5 15.8%; pump.mypinata.cloud n=601 meanH 7.90 P5 23.8%; m.rapidlaunch.io n=483 meanH 7.01 P5 23.0%; storage.googleapis.com n=293 meanH 2.52 P5 4.8%; gateway.pinata.cloud n=246 meanH 8.67 P5 35.8%; metadata.pumper.ink n=233 meanH 2.06 P5 5.6%
+== tape-20261010T225715Z.jsonl.gz: creator FE, 2,117 creators, 19,928 launches
+  x_post        +0.1068 se 0.0349 t  +3.1  x1.11
+  x_profile     +0.0311 se 0.0343 t  +0.9  x1.03
+  website       +0.1075 se 0.0353 t  +3.0  x1.11
+  description   -0.0026 se 0.0111 t  -0.2  x1.00
+  devbuy_le0.1  +0.1870 se 0.0977 t  +1.9  x1.21
+  devbuy_0.1_1  +0.2121 se 0.0983 t  +2.2  x1.24
+  devbuy_gt1    +0.2860 se 0.1018 t  +2.8  x1.33
+  all_caps      -0.0096 se 0.0114 t  -0.8  x0.99
+  us_hours      +0.0085 se 0.0146 t  +0.6  x1.01

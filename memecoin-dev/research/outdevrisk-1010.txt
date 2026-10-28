@@ -1,0 +1,27 @@
+
+######## tape-20261010T225715Z.jsonl.gz: 186 launches with a bundled dev buy in [0.4, 0.6] SOL that the dev did NOT sell inside the hour (136 non-Mayhem)
+the curve completed (exit moves to PumpSwap) on 2.94%; no outside buyer at all on 22.8%
+
+recovery = SOL back from selling the whole dev position into the curve / SOL paid (incl. the 1.25% buy fee)
+  horizon |  p1  |  p10 |  p50 |  p90 | P(<100%) | P(<90%) | P(<50%) | P(<10%) | worst
+     10s  | 0.975| 0.975| 1.000| 2.552|   52.9% |   0.0% |   0.0% |   0.0% | 0.975
+     30s  | 0.975| 0.975| 1.000| 2.323|   50.7% |   0.0% |   0.0% |   0.0% | 0.975
+     60s  | 0.975| 0.975| 1.005| 2.219|   49.3% |   0.0% |   0.0% |   0.0% | 0.955
+    300s  | 0.943| 0.975| 0.984| 1.767|   58.1% |   0.0% |   0.0% |   0.0% | 0.940
+   3600s  | 0.941| 0.948| 0.976| 1.332|   73.5% |   0.0% |   0.0% |   0.0% | 0.938
+
+dev NET at that horizon (position + 0.30% creator fee on volume so far - 0.0056 launch cost), SOL
+  horizon |  p10  |  p50  |  mean | P(NET>0) | P(NET < -0.05) | P(NET < -0.25) | P(NET < -0.49)
+     10s  | -0.0165| -0.0032| +0.3999|   47.8% |         0.00% |         0.00% |         0.00%
+     30s  | -0.0165| -0.0016| +0.4294|   49.3% |         0.00% |         0.00% |         0.00%
+     60s  | -0.0165| +0.0065| +0.4592|   52.2% |         0.00% |         0.00% |         0.00%
+    300s  | -0.0165| +0.0129| +0.4865|   52.2% |         0.00% |         0.00% |         0.00%
+   3600s  | -0.0165| +0.0011| +0.4618|   50.7% |         0.00% |         0.00% |         0.00%
+
+[no outside buyer] n=31: recovery at 60 s p10 0.975 p50 0.975 p90 0.975; NET at 1 h p50 -0.0165 mean -0.0101 P(>0) 6.5%
+
+[1-4 outside buyers] n=33: recovery at 60 s p10 0.975 p50 0.976 p90 1.024; NET at 1 h p50 -0.0141 mean -0.0008 P(>0) 18.2%
+
+[>= 5 outside buyers] n=72: recovery at 60 s p10 0.994 p50 1.272 p90 4.263; NET at 1 h p50 +0.2102 mean +0.8770 P(>0) 84.7%
+
+[curve completed] n=4 (not read)

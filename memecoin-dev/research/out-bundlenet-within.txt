@@ -1,0 +1,20 @@
+=== did the launch get back more outside buying than the dev put in? ===
+  bucket       n  P(out>dev)  P(out>2*dev)  mean out-dev  median out-dev
+   0-0.1  11,370       0.178         0.169        +0.324          -0.005
+ 0.1-0.5   5,598       0.342         0.283        +1.823          -0.198
+   0.5-1   7,820       0.392         0.311        +2.310          -0.570
+     1-2   5,117       0.367         0.270        +1.862          -0.972
+     2-5   7,961       0.476         0.341        +3.979          -0.461
+    5-10   1,006       0.335         0.209        +1.676          -4.092
+     >10   1,108       0.129         0.071       -51.038         -85.005
+
+=== within-creator control: creators with >= 3 eligible launches ===
+1,975 creators, 19,634 launches
+creators with dev-buy variation: 1,333
+POOLED slope (outside SOL per SOL of create-block dev buy): +0.0291
+WITHIN-CREATOR slope (creator fixed effects):               +0.2512
+median per-creator slope (>=5 launches, n=720): +0.0000 [+0.0000,+0.0000]  share positive 44.0%
+
+=== classifier validation (prereg arm) ===
+ single: median sigs      75  mean     149  share >=400 sigs   7.5%  median age   3854.7 h
+  broad: median sigs     746  mean     567  share >=400 sigs  55.0%  median age    365.1 h

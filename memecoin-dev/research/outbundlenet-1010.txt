@@ -1,0 +1,199 @@
+# tape-20261010T225715Z.jsonl.gz: 41,810 creates (35,089 standard curve), 651,281 non-agent trades <= 60s, 54,377 wallets; signer != creator on 16.8%; dropped 243,392 trades with slot delta > 150
+# wallets: 26,406 with ncr==1 (bundle-suspect), 17,985 ambiguous 2-49, 664 broad (>= 50); block-only classifier: 85 broad
+# ncr==1 wallets bought exactly one coin in the tape: 97.4%
+# class       buys | SOL      | in create slot | buy SOL p50 | p90
+# bundle       12,353 |  25,509.3 |         37.0% |      0.8099 | 4.9383
+# mid          52,570 |  48,419.3 |         27.0% |      0.7626 | 1.9753
+# broad        74,537 |  35,025.5 |         17.3% |      0.2025 | 1.1000
+
+######## tape-20261010T225715Z.jsonl.gz: 32,625 launches in sample, 21,690 non-Mayhem
+self-buy: dev-side p50 0.2963 mean 1.2234, >0 on 78.1%; bundle SOL >0 on 12.2% (mean 1.0552); total_self p90 4.938 p99 34.687 max 213.22
+outside (ncr >= 50) first 10 s: >0 on 45.3%, p50 0.0000, mean 1.4514 SOL; bundle wallets are 9.1% of first-10 s non-dev buyers
+
+#### VALIDATION 3: self-side share of 'bot' buying by dev-buy size
+  -- creator-only (bots.py definition)
+  dev buy  | n | bundle share of first-10 s buyers | self-side share of non-dev SOL
+  0           8,297 |                              6.4% |                         35.4%
+  le0.1       4,207 |                             29.9% |                         73.9%
+  0.1_0.5     2,285 |                             15.1% |                         32.2%
+  0.5_1       2,515 |                             13.0% |                         31.0%
+  1_2         1,892 |                              7.9% |                         12.0%
+  2_5         2,035 |                              5.5% |                          8.6%
+  gt5           459 |                              4.7% |                          8.1%
+  -- creator + signer (corrected)
+  dev buy  | n | bundle share of first-10 s buyers | self-side share of non-dev SOL
+  0           4,758 |                              9.8% |                         50.6%
+  le0.1       4,693 |                             27.8% |                         71.0%
+  0.1_0.5     2,635 |                             15.1% |                         32.0%
+  0.5_1       3,255 |                             14.7% |                         36.3%
+  1_2         2,282 |                              7.1% |                         11.3%
+  2_5         3,470 |                              3.7% |                          5.8%
+  gt5           597 |                              4.0% |                          6.3%
+
+#### H3 DOSE-RESPONSE: outside flow vs TOTAL self-buy (dev + bundle wallets), non-Mayhem
+
+  total_self: n | bundle share of buys | OUTSIDE SOL p50 | mean | P(any outside) | n_out p50 | mean | late OUT SOL mean
+  0           4,680 |                0.0% |          0.0000 |  0.0886 |          11.6% |         0 |  0.26 |   0.0576
+  le0.1       4,390 |               11.4% |          0.0000 |  0.1906 |          16.7% |         0 |  0.39 |   0.1009
+  0.1_0.5     2,509 |               10.0% |          0.0000 |  0.6762 |          36.9% |         0 |  1.38 |   0.2955
+  0.5_1       2,796 |                1.0% |          0.2173 |  1.5715 |          59.7% |         1 |  3.59 |   0.7715
+  1_2         2,050 |                2.9% |          0.8889 |  2.0609 |          74.5% |         2 |  4.52 |   1.0130
+  2_5         3,657 |                3.4% |          1.5872 |  3.5693 |          82.9% |         4 |  6.79 |   2.6429
+  gt5         1,608 |               25.8% |          1.6850 |  4.2672 |          86.9% |         5 |  7.87 |   3.7068
+
+#### H3b same table against the DEV-SIDE buy only (prior studies' dose)
+
+  self_sol: n | bundle share of buys | OUTSIDE SOL p50 | mean | P(any outside) | n_out p50 | mean | late OUT SOL mean
+  0           4,758 |                9.8% |          0.0000 |  0.1325 |          12.6% |         0 |  0.35 |   0.0714
+  le0.1       4,693 |               27.8% |          0.0000 |  0.2321 |          17.7% |         0 |  0.49 |   0.1169
+  0.1_0.5     2,635 |               15.1% |          0.0000 |  1.0192 |          44.3% |         0 |  2.05 |   0.4944
+  0.5_1       3,255 |               14.7% |          0.5303 |  1.9807 |          64.2% |         1 |  4.31 |   1.0443
+  1_2         2,282 |                7.1% |          0.8889 |  2.2789 |          76.7% |         2 |  5.02 |   1.0960
+  2_5         3,470 |                3.7% |          1.5918 |  3.6932 |          83.5% |         5 |  7.03 |   2.9596
+  gt5           597 |                4.0% |          1.1658 |  4.3773 |          81.7% |         3 |  6.56 |   4.9453
+
+#### H1 within creator: does outside flow rise with TOTAL self-buy?
+
+== H1 log1p(total_self) + controls  [21,690 launches]
+  log1p(OUT SOL 10s)     (within 1,655 groups, 9,391 obs, mean y +0.4724): log_total_self +0.2610 (t +5.0), log_prev60 -0.0200 (t -1.3), log_same_slot -0.0363 (t -2.8), first_in_tape +0.1443 (t +10.8)
+  log1p(n_out 10s)       (within 1,655 groups, 9,391 obs, mean y +0.7359): log_total_self +0.2948 (t +4.0), log_prev60 -0.0582 (t -3.0), log_same_slot -0.0523 (t -3.0), first_in_tape +0.1763 (t +11.3)
+  P(any outside 10s)     (within 1,655 groups, 9,391 obs, mean y +0.4529): log_total_self +0.1461 (t +3.8), log_prev60 -0.0295 (t -2.5), log_same_slot -0.0219 (t -1.9), first_in_tape +0.1126 (t +10.0)
+  log1p(OUT SOL 10-60s)  (within 1,655 groups, 9,391 obs, mean y +0.2890): log_total_self +0.2741 (t +5.1), log_prev60 -0.0636 (t -3.1), log_same_slot -0.0252 (t -1.4), first_in_tape +0.0505 (t +3.5)
+  log1p(n_out 10-60s)    (within 1,655 groups, 9,391 obs, mean y +0.4420): log_total_self +0.3440 (t +5.4), log_prev60 -0.0912 (t -3.7), log_same_slot -0.0276 (t -1.4), first_in_tape +0.0855 (t +4.6)
+  P(any outside 10-60s)  (within 1,655 groups, 9,391 obs, mean y +0.2593): log_total_self +0.1717 (t +5.4), log_prev60 -0.0269 (t -2.2), log_same_slot -0.0208 (t -1.9), first_in_tape +0.0544 (t +5.2)
+  log1p(OUT SOL, blk clf) (within 1,655 groups, 9,391 obs, mean y +0.2959): log_total_self +0.1145 (t +3.0), log_prev60 -0.0107 (t -0.8), log_same_slot -0.0187 (t -1.7), first_in_tape +0.1106 (t +9.9)
+
+#### H2 within creator: dev buy and BUNDLE entered SEPARATELY (the decision)
+
+== H2 all non-Mayhem  [21,690 launches]
+  log1p(OUT SOL 10s)     (within 1,655 groups, 9,391 obs, mean y +0.4724): log_self_sol +0.2187 (t +3.8), log_bundle_sol +0.2357 (t +5.3), log_prev60 -0.0209 (t -1.3), log_same_slot -0.0360 (t -2.8), first_in_tape +0.1440 (t +10.7)
+  log1p(n_out 10s)       (within 1,655 groups, 9,391 obs, mean y +0.7359): log_self_sol +0.2437 (t +2.7), log_bundle_sol +0.2546 (t +5.3), log_prev60 -0.0591 (t -3.1), log_same_slot -0.0521 (t -3.0), first_in_tape +0.1760 (t +11.2)
+  P(any outside 10s)     (within 1,655 groups, 9,391 obs, mean y +0.4529): log_self_sol +0.1671 (t +3.5), log_bundle_sol +0.0282 (t +1.2), log_prev60 -0.0287 (t -2.4), log_same_slot -0.0223 (t -2.0), first_in_tape +0.1130 (t +10.1)
+  log1p(OUT SOL 10-60s)  (within 1,655 groups, 9,391 obs, mean y +0.2890): log_self_sol +0.1959 (t +3.3), log_bundle_sol +0.2917 (t +4.4), log_prev60 -0.0653 (t -3.2), log_same_slot -0.0248 (t -1.4), first_in_tape +0.0498 (t +3.4)
+  log1p(n_out 10-60s)    (within 1,655 groups, 9,391 obs, mean y +0.4420): log_self_sol +0.2577 (t +3.6), log_bundle_sol +0.3393 (t +4.7), log_prev60 -0.0929 (t -3.7), log_same_slot -0.0273 (t -1.3), first_in_tape +0.0848 (t +4.5)
+  P(any outside 10-60s)  (within 1,655 groups, 9,391 obs, mean y +0.2593): log_self_sol +0.1449 (t +3.8), log_bundle_sol +0.1311 (t +4.3), log_prev60 -0.0272 (t -2.3), log_same_slot -0.0208 (t -1.9), first_in_tape +0.0542 (t +5.2)
+  log1p(OUT SOL, blk clf) (within 1,655 groups, 9,391 obs, mean y +0.2959): log_self_sol +0.0965 (t +2.4), log_bundle_sol +0.1118 (t +3.0), log_prev60 -0.0111 (t -0.9), log_same_slot -0.0185 (t -1.7), first_in_tape +0.1105 (t +9.9)
+
+== H2 within creator x hour (same-window control)  [21,690 launches]
+  log1p(OUT SOL 10s)     (within 1,910 groups, 7,412 obs, mean y +0.4724): log_self_sol +0.2251 (t +2.9), log_bundle_sol +0.1965 (t +3.6), log_prev60 -0.0250 (t -1.4), log_same_slot -0.0393 (t -2.5), first_in_tape +0.1703 (t +9.8)
+  log1p(n_out 10s)       (within 1,910 groups, 7,412 obs, mean y +0.7359): log_self_sol +0.2441 (t +2.4), log_bundle_sol +0.1817 (t +3.8), log_prev60 -0.0416 (t -1.9), log_same_slot -0.0641 (t -3.4), first_in_tape +0.2172 (t +10.7)
+  P(any outside 10s)     (within 1,910 groups, 7,412 obs, mean y +0.4529): log_self_sol +0.1817 (t +3.6), log_bundle_sol -0.0049 (t -0.3), log_prev60 -0.0204 (t -1.4), log_same_slot -0.0358 (t -2.7), first_in_tape +0.1364 (t +9.1)
+  log1p(OUT SOL 10-60s)  (within 1,910 groups, 7,412 obs, mean y +0.2890): log_self_sol +0.1620 (t +2.2), log_bundle_sol +0.3261 (t +4.2), log_prev60 -0.0951 (t -4.0), log_same_slot -0.0262 (t -1.3), first_in_tape +0.0387 (t +2.3)
+  log1p(n_out 10-60s)    (within 1,910 groups, 7,412 obs, mean y +0.4420): log_self_sol +0.2327 (t +2.6), log_bundle_sol +0.3506 (t +4.0), log_prev60 -0.1183 (t -4.0), log_same_slot -0.0218 (t -0.9), first_in_tape +0.0687 (t +3.2)
+  P(any outside 10-60s)  (within 1,910 groups, 7,412 obs, mean y +0.2593): log_self_sol +0.1683 (t +3.4), log_bundle_sol +0.1112 (t +3.0), log_prev60 -0.0358 (t -2.3), log_same_slot -0.0173 (t -1.3), first_in_tape +0.0453 (t +3.5)
+  log1p(OUT SOL, blk clf) (within 1,910 groups, 7,412 obs, mean y +0.2959): log_self_sol +0.1084 (t +1.8), log_bundle_sol +0.0999 (t +1.9), log_prev60 -0.0056 (t -0.4), log_same_slot -0.0227 (t -1.9), first_in_tape +0.1360 (t +9.3)
+
+== H2 restricted to total_self > 0  [17,010 launches]
+  log1p(OUT SOL 10s)     (within 1,405 groups, 7,338 obs, mean y +0.5904): log_self_sol +0.2069 (t +3.3), log_bundle_sol +0.2355 (t +5.2), log_prev60 -0.0243 (t -1.2), log_same_slot -0.0447 (t -2.5), first_in_tape +0.1591 (t +10.2)
+  log1p(n_out 10s)       (within 1,405 groups, 7,338 obs, mean y +0.9064): log_self_sol +0.2243 (t +2.6), log_bundle_sol +0.2599 (t +5.3), log_prev60 -0.0652 (t -2.9), log_same_slot -0.0624 (t -2.6), first_in_tape +0.1739 (t +9.9)
+  P(any outside 10s)     (within 1,405 groups, 7,338 obs, mean y +0.5457): log_self_sol +0.1440 (t +3.6), log_bundle_sol +0.0321 (t +1.3), log_prev60 -0.0292 (t -2.1), log_same_slot -0.0269 (t -1.7), first_in_tape +0.1065 (t +8.6)
+  log1p(OUT SOL 10-60s)  (within 1,405 groups, 7,338 obs, mean y +0.3611): log_self_sol +0.1824 (t +2.8), log_bundle_sol +0.2883 (t +4.3), log_prev60 -0.0820 (t -3.4), log_same_slot -0.0389 (t -1.6), first_in_tape +0.0526 (t +3.0)
+  log1p(n_out 10-60s)    (within 1,405 groups, 7,338 obs, mean y +0.5489): log_self_sol +0.2238 (t +2.9), log_bundle_sol +0.3337 (t +4.6), log_prev60 -0.1151 (t -3.8), log_same_slot -0.0395 (t -1.4), first_in_tape +0.0912 (t +4.1)
+  P(any outside 10-60s)  (within 1,405 groups, 7,338 obs, mean y +0.3186): log_self_sol +0.1209 (t +3.2), log_bundle_sol +0.1274 (t +4.1), log_prev60 -0.0337 (t -2.3), log_same_slot -0.0257 (t -1.7), first_in_tape +0.0579 (t +4.8)
+  log1p(OUT SOL, blk clf) (within 1,405 groups, 7,338 obs, mean y +0.3698): log_self_sol +0.0839 (t +1.9), log_bundle_sol +0.1102 (t +2.9), log_prev60 -0.0131 (t -0.8), log_same_slot -0.0199 (t -1.3), first_in_tape +0.1242 (t +9.6)
+
+== H2 restricted to total_self > 0.5 (the fundable-bundle regime)  [10,111 launches]
+  log1p(OUT SOL 10s)     (within 604 groups, 3,478 obs, mean y +0.8860): log_self_sol +0.1347 (t +1.4), log_bundle_sol +0.2559 (t +5.6), log_prev60 -0.0541 (t -1.5), log_same_slot -0.0892 (t -2.5), first_in_tape +0.1898 (t +6.3)
+  log1p(n_out 10s)       (within 604 groups, 3,478 obs, mean y +1.3387): log_self_sol +0.0568 (t +0.5), log_bundle_sol +0.2709 (t +5.2), log_prev60 -0.1156 (t -3.1), log_same_slot -0.1016 (t -2.2), first_in_tape +0.1856 (t +5.7)
+  P(any outside 10s)     (within 604 groups, 3,478 obs, mean y +0.7540): log_self_sol +0.0500 (t +1.0), log_bundle_sol +0.0334 (t +1.3), log_prev60 -0.0368 (t -2.1), log_same_slot -0.0058 (t -0.2), first_in_tape +0.0726 (t +4.0)
+  log1p(OUT SOL 10-60s)  (within 604 groups, 3,478 obs, mean y +0.5633): log_self_sol +0.1597 (t +1.5), log_bundle_sol +0.3088 (t +4.4), log_prev60 -0.1533 (t -3.5), log_same_slot -0.0781 (t -1.5), first_in_tape +0.0375 (t +1.0)
+  log1p(n_out 10-60s)    (within 604 groups, 3,478 obs, mean y +0.8427): log_self_sol +0.1639 (t +1.4), log_bundle_sol +0.3534 (t +4.6), log_prev60 -0.2090 (t -3.9), log_same_slot -0.0652 (t -1.1), first_in_tape +0.0507 (t +1.1)
+  P(any outside 10-60s)  (within 604 groups, 3,478 obs, mean y +0.4762): log_self_sol +0.0618 (t +1.0), log_bundle_sol +0.1328 (t +4.1), log_prev60 -0.0610 (t -2.3), log_same_slot -0.0217 (t -0.7), first_in_tape +0.0167 (t +0.8)
+  log1p(OUT SOL, blk clf) (within 604 groups, 3,478 obs, mean y +0.5567): log_self_sol -0.0053 (t -0.1), log_bundle_sol +0.1223 (t +3.2), log_prev60 -0.0325 (t -1.1), log_same_slot -0.0326 (t -1.0), first_in_tape +0.1711 (t +6.8)
+
+#### H2b within creator: same-block bundle vs a +1-10 s one-off, entered separately
+
+== H2b all non-Mayhem  [21,690 launches]
+  log1p(OUT SOL 10s)     (within 1,655 groups, 9,391 obs, mean y +0.4724): log_self_sol +0.2231 (t +3.9), log_bundle_BLK -0.0243 (t -0.3), log_oneoff_1_10s +0.2910 (t +6.7), log_prev60 -0.0206 (t -1.3), log_same_slot -0.0356 (t -2.8), first_in_tape +0.1443 (t +10.8)
+  log1p(n_out 10s)       (within 1,655 groups, 9,391 obs, mean y +0.7359): log_self_sol +0.2476 (t +2.8), log_bundle_BLK +0.0146 (t +0.1), log_oneoff_1_10s +0.2973 (t +6.2), log_prev60 -0.0587 (t -3.1), log_same_slot -0.0518 (t -3.0), first_in_tape +0.1763 (t +11.3)
+  P(any outside 10s)     (within 1,655 groups, 9,391 obs, mean y +0.4529): log_self_sol +0.1683 (t +3.6), log_bundle_BLK -0.0262 (t -0.5), log_oneoff_1_10s +0.0405 (t +1.6), log_prev60 -0.0287 (t -2.4), log_same_slot -0.0223 (t -2.0), first_in_tape +0.1130 (t +10.1)
+  log1p(OUT SOL 10-60s)  (within 1,655 groups, 9,391 obs, mean y +0.2890): log_self_sol +0.2013 (t +3.4), log_bundle_BLK +0.0046 (t +0.0), log_oneoff_1_10s +0.3316 (t +5.0), log_prev60 -0.0647 (t -3.2), log_same_slot -0.0246 (t -1.4), first_in_tape +0.0501 (t +3.4)
+  log1p(n_out 10-60s)    (within 1,655 groups, 9,391 obs, mean y +0.4420): log_self_sol +0.2636 (t +3.7), log_bundle_BLK -0.0023 (t -0.0), log_oneoff_1_10s +0.4003 (t +5.9), log_prev60 -0.0924 (t -3.7), log_same_slot -0.0269 (t -1.3), first_in_tape +0.0852 (t +4.6)
+  P(any outside 10-60s)  (within 1,655 groups, 9,391 obs, mean y +0.2593): log_self_sol +0.1457 (t +3.8), log_bundle_BLK +0.0451 (t +0.7), log_oneoff_1_10s +0.1477 (t +4.9), log_prev60 -0.0271 (t -2.3), log_same_slot -0.0206 (t -1.9), first_in_tape +0.0544 (t +5.2)
+  log1p(OUT SOL, blk clf) (within 1,655 groups, 9,391 obs, mean y +0.2959): log_self_sol +0.1003 (t +2.5), log_bundle_BLK -0.0700 (t -0.9), log_oneoff_1_10s +0.1516 (t +4.3), log_prev60 -0.0108 (t -0.8), log_same_slot -0.0184 (t -1.7), first_in_tape +0.1106 (t +9.9)
+
+== H2b within creator x hour (same-window control)  [21,690 launches]
+  log1p(OUT SOL 10s)     (within 1,910 groups, 7,412 obs, mean y +0.4724): log_self_sol +0.2374 (t +3.1), log_bundle_BLK -0.1632 (t -1.1), log_oneoff_1_10s +0.2318 (t +4.7), log_prev60 -0.0258 (t -1.4), log_same_slot -0.0402 (t -2.6), first_in_tape +0.1680 (t +9.8)
+  log1p(n_out 10s)       (within 1,910 groups, 7,412 obs, mean y +0.7359): log_self_sol +0.2576 (t +2.5), log_bundle_BLK -0.2122 (t -1.9), log_oneoff_1_10s +0.2126 (t +4.8), log_prev60 -0.0426 (t -2.0), log_same_slot -0.0651 (t -3.5), first_in_tape +0.2146 (t +10.6)
+  P(any outside 10s)     (within 1,910 groups, 7,412 obs, mean y +0.4529): log_self_sol +0.1850 (t +3.7), log_bundle_BLK -0.1034 (t -1.5), log_oneoff_1_10s +0.0091 (t +0.6), log_prev60 -0.0208 (t -1.4), log_same_slot -0.0361 (t -2.7), first_in_tape +0.1357 (t +9.0)
+  log1p(OUT SOL 10-60s)  (within 1,910 groups, 7,412 obs, mean y +0.2890): log_self_sol +0.1794 (t +2.4), log_bundle_BLK -0.1616 (t -0.8), log_oneoff_1_10s +0.3221 (t +4.0), log_prev60 -0.0954 (t -3.9), log_same_slot -0.0272 (t -1.3), first_in_tape +0.0356 (t +2.1)
+  log1p(n_out 10-60s)    (within 1,910 groups, 7,412 obs, mean y +0.4420): log_self_sol +0.2522 (t +2.8), log_bundle_BLK -0.2056 (t -0.9), log_oneoff_1_10s +0.3666 (t +4.3), log_prev60 -0.1190 (t -4.0), log_same_slot -0.0231 (t -0.9), first_in_tape +0.0652 (t +3.0)
+  P(any outside 10-60s)  (within 1,910 groups, 7,412 obs, mean y +0.2593): log_self_sol +0.1735 (t +3.5), log_bundle_BLK -0.0428 (t -0.4), log_oneoff_1_10s +0.1281 (t +3.7), log_prev60 -0.0362 (t -2.3), log_same_slot -0.0176 (t -1.3), first_in_tape +0.0444 (t +3.5)
+  log1p(OUT SOL, blk clf) (within 1,910 groups, 7,412 obs, mean y +0.2959): log_self_sol +0.1146 (t +1.9), log_bundle_BLK -0.0836 (t -0.5), log_oneoff_1_10s +0.1219 (t +2.5), log_prev60 -0.0061 (t -0.4), log_same_slot -0.0231 (t -1.9), first_in_tape +0.1348 (t +9.3)
+
+#### H6 DEV-BUY TIMING: where is the dev buy, and does it matter?
+  dev buy present on 16,944/21,690 launches; rides in the CREATE TX on 99.1%; slot offset p50 0 p90 0 p99 0
+  arm | n | OUT SOL p50 | mean | P(any outside 10s) | n_out mean | late OUT SOL mean
+  create_tx       7,276 |      0.0988 |  1.4059 |              56.1% |       3.11 |   0.6774
+  same_slot_sep      57 |      0.0000 |  0.2921 |              31.6% |       0.58 |   0.1836
+  sl_1_8         n=0 (not read)
+  sl_9_25        n=1 (not read)
+  sl_gt25        n=2 (not read)
+
+== H6 within creator (base = create_tx)  [16,932 launches]
+  log1p(OUT SOL 10s)     (within 1,399 groups, 7,322 obs, mean y +0.5887): sep_same_slot -0.2403 (t -15.1), log_total_self +0.2584 (t +4.5), log_prev60 -0.0238 (t -1.2), log_same_slot -0.0456 (t -2.5), first_in_tape +0.1608 (t +10.4)
+  log1p(n_out 10s)       (within 1,399 groups, 7,322 obs, mean y +0.9040): sep_same_slot -0.8058 (t -40.2), log_total_self +0.2915 (t +4.1), log_prev60 -0.0646 (t -2.8), log_same_slot -0.0635 (t -2.7), first_in_tape +0.1766 (t +10.1)
+  P(any outside 10s)     (within 1,399 groups, 7,322 obs, mean y +0.5447): sep_same_slot -0.4860 (t -47.5), log_total_self +0.1319 (t +4.0), log_prev60 -0.0295 (t -2.1), log_same_slot -0.0266 (t -1.7), first_in_tape +0.1075 (t +8.6)
+  log1p(OUT SOL 10-60s)  (within 1,399 groups, 7,322 obs, mean y +0.3608): sep_same_slot -0.0510 (t -2.8), log_total_self +0.2727 (t +4.7), log_prev60 -0.0800 (t -3.3), log_same_slot -0.0399 (t -1.6), first_in_tape +0.0540 (t +3.1)
+  log1p(n_out 10-60s)    (within 1,399 groups, 7,322 obs, mean y +0.5473): sep_same_slot -0.0457 (t -2.1), log_total_self +0.3277 (t +4.8), log_prev60 -0.1138 (t -3.8), log_same_slot -0.0404 (t -1.4), first_in_tape +0.0929 (t +4.2)
+  P(any outside 10-60s)  (within 1,399 groups, 7,322 obs, mean y +0.3174): sep_same_slot -0.0153 (t -1.5), log_total_self +0.1559 (t +4.8), log_prev60 -0.0337 (t -2.3), log_same_slot -0.0258 (t -1.7), first_in_tape +0.0592 (t +4.9)
+  log1p(OUT SOL, blk clf) (within 1,399 groups, 7,322 obs, mean y +0.3690): sep_same_slot -0.0541 (t -4.5), log_total_self +0.1050 (t +2.5), log_prev60 -0.0125 (t -0.8), log_same_slot -0.0205 (t -1.3), first_in_tape +0.1245 (t +9.7)
+
+#### H7 CHART SHAPE at +10 s -> OUTSIDE flow in 10-60 s (self-buy size held fixed)
+  cell | n | late OUT SOL p50 | mean | P(any late) | n_out_late mean
+  no sell at all      3,551 |           0.0000 |  0.1693 |       11.8% |            0.43
+  sells, dd<=10%        753 |           0.0533 |  2.0279 |       55.2% |            4.20
+  dd 10-50%           1,548 |           0.0015 |  1.4703 |       50.5% |            3.34
+  dd >50% (dumped)    1,503 |           0.0000 |  0.3800 |       18.9% |            0.83
+
+== H7 within creator  [21,690 launches]
+  log1p(OUT SOL 10s)     (within 1,655 groups, 9,391 obs, mean y +0.4724): log_total_self +0.0879 (t +2.8), drawdown10 -2.5700 (t -23.4), sell_share10 +5.9383 (t +25.0), log_dev_sell10 +0.1321 (t +5.0), no_sell10 +0.1706 (t +5.6), log_prev60 -0.0181 (t -1.5), log_same_slot -0.0165 (t -1.5), first_in_tape +0.0960 (t +9.5)
+  log1p(n_out 10s)       (within 1,655 groups, 9,391 obs, mean y +0.7359): log_total_self +0.0495 (t +1.0), drawdown10 -2.2131 (t -21.5), sell_share10 +4.6905 (t +19.8), log_dev_sell10 +0.2121 (t +7.5), no_sell10 -0.2556 (t -5.6), log_prev60 -0.0525 (t -3.5), log_same_slot -0.0319 (t -2.1), first_in_tape +0.1131 (t +9.4)
+  P(any outside 10s)     (within 1,655 groups, 9,391 obs, mean y +0.4529): log_total_self +0.0548 (t +2.0), drawdown10 -0.0688 (t -1.4), sell_share10 +0.0699 (t +0.4), log_dev_sell10 +0.0320 (t +1.7), no_sell10 -0.4532 (t -9.1), log_prev60 -0.0241 (t -2.4), log_same_slot -0.0206 (t -1.9), first_in_tape +0.0758 (t +7.6)
+  log1p(OUT SOL 10-60s)  (within 1,655 groups, 9,391 obs, mean y +0.2890): log_total_self +0.1204 (t +3.0), drawdown10 -2.2406 (t -13.6), sell_share10 +3.6088 (t +10.7), log_dev_sell10 +0.1114 (t +2.9), no_sell10 +0.0285 (t +0.8), log_prev60 -0.0665 (t -3.5), log_same_slot -0.0053 (t -0.3), first_in_tape +0.0365 (t +2.6)
+  log1p(n_out 10-60s)    (within 1,655 groups, 9,391 obs, mean y +0.4420): log_total_self +0.1559 (t +3.2), drawdown10 -2.7738 (t -14.8), sell_share10 +4.3833 (t +11.1), log_dev_sell10 +0.1135 (t +2.4), no_sell10 -0.0027 (t -0.1), log_prev60 -0.0948 (t -4.1), log_same_slot -0.0035 (t -0.2), first_in_tape +0.0667 (t +3.8)
+  P(any outside 10-60s)  (within 1,655 groups, 9,391 obs, mean y +0.2593): log_total_self +0.1134 (t +3.7), drawdown10 -0.9160 (t -14.6), sell_share10 +1.3820 (t +9.0), log_dev_sell10 +0.0133 (t +0.6), no_sell10 -0.0284 (t -1.0), log_prev60 -0.0282 (t -2.5), log_same_slot -0.0134 (t -1.2), first_in_tape +0.0471 (t +4.7)
+  log1p(OUT SOL, blk clf) (within 1,655 groups, 9,391 obs, mean y +0.2959): log_total_self +0.0510 (t +1.7), drawdown10 -1.4263 (t -15.4), sell_share10 +3.5996 (t +16.8), log_dev_sell10 -0.0316 (t -1.3), no_sell10 +0.1065 (t +4.1), log_prev60 -0.0094 (t -0.8), log_same_slot -0.0112 (t -1.1), first_in_tape +0.0757 (t +7.8)
+
+== H7 within creator x hour (same-window control)  [21,690 launches]
+  log1p(OUT SOL 10s)     (within 1,910 groups, 7,412 obs, mean y +0.4724): log_total_self +0.0654 (t +1.4), drawdown10 -2.4488 (t -19.1), sell_share10 +5.6433 (t +20.4), log_dev_sell10 +0.1348 (t +4.5), no_sell10 +0.1761 (t +6.1), log_prev60 -0.0210 (t -1.6), log_same_slot -0.0141 (t -1.2), first_in_tape +0.1153 (t +8.9)
+  log1p(n_out 10s)       (within 1,910 groups, 7,412 obs, mean y +0.7359): log_total_self +0.0172 (t +0.3), drawdown10 -2.0822 (t -16.8), sell_share10 +4.4553 (t +15.9), log_dev_sell10 +0.1864 (t +5.6), no_sell10 -0.2345 (t -6.0), log_prev60 -0.0270 (t -1.6), log_same_slot -0.0371 (t -2.4), first_in_tape +0.1418 (t +9.2)
+  P(any outside 10s)     (within 1,910 groups, 7,412 obs, mean y +0.4529): log_total_self +0.0491 (t +1.5), drawdown10 -0.1042 (t -2.0), sell_share10 +0.1041 (t +0.7), log_dev_sell10 +0.0247 (t +1.2), no_sell10 -0.4435 (t -12.3), log_prev60 -0.0079 (t -0.6), log_same_slot -0.0304 (t -2.3), first_in_tape +0.0925 (t +7.0)
+  log1p(OUT SOL 10-60s)  (within 1,910 groups, 7,412 obs, mean y +0.2890): log_total_self +0.1155 (t +1.9), drawdown10 -2.1656 (t -11.9), sell_share10 +3.6022 (t +9.5), log_dev_sell10 +0.0644 (t +1.3), no_sell10 +0.0379 (t +0.9), log_prev60 -0.0944 (t -4.2), log_same_slot -0.0046 (t -0.2), first_in_tape +0.0155 (t +0.9)
+  log1p(n_out 10-60s)    (within 1,910 groups, 7,412 obs, mean y +0.4420): log_total_self +0.1490 (t +2.0), drawdown10 -2.6023 (t -12.4), sell_share10 +4.2112 (t +9.4), log_dev_sell10 +0.0649 (t +1.2), no_sell10 +0.0091 (t +0.2), log_prev60 -0.1183 (t -4.2), log_same_slot +0.0039 (t +0.2), first_in_tape +0.0402 (t +1.9)
+  P(any outside 10-60s)  (within 1,910 groups, 7,412 obs, mean y +0.2593): log_total_self +0.1280 (t +3.0), drawdown10 -0.8309 (t -9.2), sell_share10 +1.2806 (t +5.9), log_dev_sell10 -0.0091 (t -0.3), no_sell10 -0.0202 (t -0.6), log_prev60 -0.0369 (t -2.5), log_same_slot -0.0098 (t -0.7), first_in_tape +0.0354 (t +2.8)
+  log1p(OUT SOL, blk clf) (within 1,910 groups, 7,412 obs, mean y +0.2959): log_total_self +0.0585 (t +1.2), drawdown10 -1.3853 (t -11.5), sell_share10 +3.4259 (t +12.9), log_dev_sell10 -0.0441 (t -1.6), no_sell10 +0.1034 (t +3.8), log_prev60 -0.0040 (t -0.3), log_same_slot -0.0128 (t -1.2), first_in_tape +0.0977 (t +7.7)
+
+#### H7b conditioned on the coin being ALIVE at +10 s [9,824 of 21,690]
+  cell (alive, total_self 0.1-2) | n | late OUT SOL p50 | mean | P(any late) | n_out_late
+  dev did NOT sell                2,926 |           0.0000 |  1.1306 |       42.2% |       2.59
+  dev sold, dd<=25%                 214 |           1.4354 |  3.5651 |       73.4% |       7.21
+  dev sold, dd>25%                  982 |           0.0000 |  0.4895 |       24.4% |       1.03
+
+== H7b within creator (alive only, early demand controlled)  [9,824 launches]
+  log1p(OUT SOL 10-60s)  (within 590 groups, 3,093 obs, mean y +0.5897): log_total_self +0.0893 (t +1.6), log_out_sol_10s +0.3331 (t +8.5), drawdown10 -1.6024 (t -9.6), log_dev_sell10 +0.1443 (t +2.7), sell_share10 +1.4668 (t +4.2), log_prev60 -0.1831 (t -4.0), log_same_slot +0.0092 (t +0.2), first_in_tape +0.0236 (t +0.6)
+  log1p(n_out 10-60s)    (within 590 groups, 3,093 obs, mean y +0.8860): log_total_self +0.1102 (t +1.7), log_out_sol_10s +0.3958 (t +8.5), drawdown10 -2.0138 (t -9.6), log_dev_sell10 +0.1532 (t +2.5), sell_share10 +1.8334 (t +4.0), log_prev60 -0.2370 (t -4.3), log_same_slot +0.0243 (t +0.4), first_in_tape +0.0572 (t +1.3)
+  P(any outside 10-60s)  (within 590 groups, 3,093 obs, mean y +0.4965): log_total_self +0.0945 (t +2.4), log_out_sol_10s +0.0911 (t +3.9), drawdown10 -0.7329 (t -8.5), log_dev_sell10 +0.0373 (t +1.5), sell_share10 +0.7007 (t +3.2), log_prev60 -0.0586 (t -2.1), log_same_slot +0.0028 (t +0.1), first_in_tape +0.0449 (t +2.0)
+
+== H7b within creator x hour (alive only)  [9,824 launches]
+  log1p(OUT SOL 10-60s)  (within 718 groups, 2,207 obs, mean y +0.5897): log_total_self +0.0910 (t +1.0), log_out_sol_10s +0.3885 (t +8.1), drawdown10 -1.5420 (t -8.0), log_dev_sell10 +0.1331 (t +2.4), sell_share10 +1.2206 (t +3.0), log_prev60 -0.2424 (t -3.7), log_same_slot +0.0218 (t +0.3), first_in_tape +0.0022 (t +0.0)
+  log1p(n_out 10-60s)    (within 718 groups, 2,207 obs, mean y +0.8860): log_total_self +0.1087 (t +1.0), log_out_sol_10s +0.4506 (t +8.3), drawdown10 -1.8509 (t -8.0), log_dev_sell10 +0.1546 (t +2.4), sell_share10 +1.3287 (t +2.6), log_prev60 -0.2807 (t -3.6), log_same_slot +0.0567 (t +0.7), first_in_tape +0.0222 (t +0.4)
+  P(any outside 10-60s)  (within 718 groups, 2,207 obs, mean y +0.4965): log_total_self +0.1020 (t +1.8), log_out_sol_10s +0.1113 (t +4.2), drawdown10 -0.5890 (t -5.1), log_dev_sell10 +0.0250 (t +0.8), sell_share10 +0.3712 (t +1.4), log_prev60 -0.0663 (t -1.8), log_same_slot +0.0134 (t +0.3), first_in_tape +0.0404 (t +1.2)
+
+#### Does SPLITTING a given self-buy across more wallets draw more? (n_bundle at matched total_self)
+  total_self 0.5-1.0 [n=2,796]: n_bundle p50 0 p90 0
+    n_bundle 0       2,718 | OUT SOL p50 0.2186 mean 1.5527 | P(any) 59.4% | late mean 0.7660
+    n_bundle 1          42 | OUT SOL p50 1.6016 mean 3.3133 | P(any) 85.7% | late mean 1.4929
+    n_bundle 2plus      36 | OUT SOL p50 0.0049 mean 0.9638 | P(any) 50.0% | late mean 0.3428
+  total_self 1.0-2.0 [n=2,050]: n_bundle p50 0 p90 1
+    n_bundle 0       1,750 | OUT SOL p50 0.8871 mean 1.7970 | P(any) 71.7% | late mean 0.8959
+    n_bundle 1         225 | OUT SOL p50 1.4815 mean 3.4546 | P(any) 93.8% | late mean 1.4442
+    n_bundle 2plus      75 | OUT SOL p50 1.8967 mean 4.0366 | P(any) 81.3% | late mean 2.4515
+  total_self 2.0-5.0 [n=3,657]: n_bundle p50 0 p90 2
+    n_bundle 0       2,927 | OUT SOL p50 1.5835 mean 3.5220 | P(any) 81.6% | late mean 2.8158
+    n_bundle 1         339 | OUT SOL p50 1.4510 mean 3.4712 | P(any) 92.3% | late mean 2.2758
+    n_bundle 2plus     391 | OUT SOL p50 1.8614 mean 4.0082 | P(any) 84.4% | late mean 1.6671
+  total_self 5.0-1000000000.0 [n=1,608]: n_bundle p50 3 p90 12
+    n_bundle 0         481 | OUT SOL p50 0.9188 mean 3.1114 | P(any) 79.4% | late mean 3.7540
+    n_bundle 1         139 | OUT SOL p50 2.4691 mean 5.8537 | P(any) 91.4% | late mean 5.8691
+    n_bundle 2plus     988 | OUT SOL p50 2.0427 mean 4.6066 | P(any) 90.0% | late mean 3.3795

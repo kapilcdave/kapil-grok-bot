@@ -1,0 +1,30 @@
+delay 15.0s  scope post-linked  n=3466  base: mean R -10.3%  win 5.9%  stop 15.0%
+
+fit first 60% -> test last 40%: n_test=1387 test base mean R -9.3% win 6.0%
+  top   2% (k=  27)  mean R   -9.6% [-23.3%,+7.1%]  win  7.4%
+  top   5% (k=  69)  mean R   -4.6% [-13.2%,+5.6%]  win 10.1%
+  top  10% (k= 138)  mean R   -5.7% [-10.9%,+0.2%]  win  6.5%
+  top  20% (k= 277)  mean R   -3.9% [-6.9%,-0.9%]  win  4.7%
+  top  50% (k= 693)  mean R   -4.2% [-5.7%,-2.6%]  win  3.3%
+
+fit last 40% -> test first 60%: n_test=2079 test base mean R -11.0% win 5.9%
+  top   2% (k=  41)  mean R   -9.7% [-22.5%,+6.3%]  win 14.6%
+  top   5% (k= 103)  mean R   -3.4% [-11.6%,+5.5%]  win 13.6%
+  top  10% (k= 207)  mean R   -2.9% [-7.2%,+1.4%]  win  7.7%
+  top  20% (k= 415)  mean R   -2.9% [-5.2%,-0.2%]  win  4.8%
+  top  50% (k=1039)  mean R   -4.7% [-6.0%,-3.5%]  win  3.1%
+delay 30.0s  scope post-linked  n=3285  base: mean R -8.6%  win 5.3%  stop 12.3%
+
+fit first 60% -> test last 40%: n_test=1314 test base mean R -8.0% win 5.3%
+  top   2% (k=  26)  mean R  +17.5% [-8.2%,+43.9%]  win 38.5%
+  top   5% (k=  65)  mean R   +3.4% [-10.1%,+16.7%]  win 21.5%
+  top  10% (k= 131)  mean R   -3.2% [-9.7%,+4.1%]  win 11.5%
+  top  20% (k= 262)  mean R   -3.5% [-7.1%,+0.3%]  win  6.1%
+  top  50% (k= 657)  mean R   -3.4% [-4.9%,-1.8%]  win  3.0%
+
+fit last 40% -> test first 60%: n_test=1971 test base mean R -9.0% win 5.4%
+  top   2% (k=  39)  mean R   +5.6% [-12.3%,+25.1%]  win 25.6%
+  top   5% (k=  98)  mean R   -0.1% [-8.8%,+9.5%]  win 14.3%
+  top  10% (k= 197)  mean R   -3.0% [-7.8%,+1.9%]  win  8.6%
+  top  20% (k= 394)  mean R   -4.1% [-6.6%,-1.5%]  win  4.6%
+  top  50% (k= 985)  mean R   -3.7% [-4.9%,-2.4%]  win  2.9%

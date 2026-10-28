@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+*.sqlite
+# keypairs
+*.json
+research/data/
+meteora/node_modules/
+raydium/node_modules/

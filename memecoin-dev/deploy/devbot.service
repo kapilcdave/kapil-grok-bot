@@ -1,0 +1,24 @@
+[Unit]
+Description=devbot - memecoin dev pipeline (Telegram)
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=%h/devbot
+EnvironmentFile=%h/.devbot/.env
+ExecStart=%h/devbot/.venv/bin/python -m devbot.bot
+# A config error will not fix itself on restart.
+RestartPreventExitStatus=78
+Restart=on-failure
+RestartSec=30
+# The e2-micro has ~964 MB shared with Hermes; keep devbot from starving the gateway.
+MemoryMax=220M
+MemoryHigh=180M
+Nice=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

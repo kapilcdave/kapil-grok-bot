@@ -1,0 +1,65 @@
+tape tape-20261011T225728Z.jsonl.gz: 45,685 creates, 33,789 in sample (standard curve + meta ok)
+buyers (non-creator, all): 760,550; human-like (cap 10): 87,683 (11.5%)
+non-creator volume 908,875 SOL; human buy SOL 55,248 (6.1%)
+H per coin: median 0, mean 2.60, P(H=0) 79.2%, P(H>=5) 7.3%, P(H>=20) 2.9%
+lever prevalence: x_post 41.4%, x_profile 19.3%, x_other 0.4%, website 41.9%, telegram 2.1%, description 50.8%, prior_1_4 16.1%, prior_5plus 35.3%, devbuy_le1 53.9%, devbuy_gt1 15.9%, tool_j7 16.0%, tool_other 16.6%, hot_copy 18.6%, non_ascii 3.2%, all_caps 27.1%, ticker_eq_name 30.8%, us_hours 47.5%
+
+== log1p(H)  (n=33,789, creators=16,602, mean y 0.341)
+  const           +0.2532  se 0.0230  t  +11.0  
+  x_post          +0.1562  se 0.0206  t   +7.6  x1.17
+  x_profile       -0.0214  se 0.0195  t   -1.1  x0.98
+  x_other         +0.1406  se 0.1026  t   +1.4  x1.15
+  website         +0.1489  se 0.0174  t   +8.6  x1.16
+  telegram        -0.0051  se 0.0331  t   -0.2  x0.99
+  description     -0.0705  se 0.0141  t   -5.0  x0.93
+  prior_1_4       -0.1493  se 0.0145  t  -10.3  x0.86
+  prior_5plus     -0.2006  se 0.0172  t  -11.6  x0.82
+  devbuy_le1      +0.0840  se 0.0175  t   +4.8  x1.09
+  devbuy_gt1      +0.4768  se 0.0311  t  +15.3  x1.61
+  tool_j7         +0.0183  se 0.0260  t   +0.7  x1.02
+  tool_other      +0.1282  se 0.0228  t   +5.6  x1.14
+  hot_copy        -0.0537  se 0.0148  t   -3.6  x0.95
+  non_ascii       +0.0019  se 0.0275  t   +0.1  x1.00
+  all_caps        -0.1741  se 0.0130  t  -13.4  x0.84
+  ticker_eq_name  +0.0541  se 0.0124  t   +4.3  x1.06
+  us_hours        -0.0217  se 0.0114  t   -1.9  x0.98
+
+== P(H>=5)  (n=33,789, creators=16,602, mean y 0.073)
+  const           +0.0485  se 0.0063  t   +7.7  
+  x_post          +0.0441  se 0.0055  t   +8.0  
+  x_profile       -0.0035  se 0.0059  t   -0.6  
+  x_other         +0.0369  se 0.0345  t   +1.1  
+  website         +0.0425  se 0.0052  t   +8.2  
+  telegram        -0.0010  se 0.0097  t   -0.1  
+  description     -0.0186  se 0.0041  t   -4.5  
+  prior_1_4       -0.0396  se 0.0043  t   -9.2  
+  prior_5plus     -0.0476  se 0.0046  t  -10.2  
+  devbuy_le1      +0.0137  se 0.0048  t   +2.8  
+  devbuy_gt1      +0.1215  se 0.0090  t  +13.6  
+  tool_j7         +0.0093  se 0.0072  t   +1.3  
+  tool_other      +0.0358  se 0.0068  t   +5.3  
+  hot_copy        -0.0100  se 0.0045  t   -2.2  
+  non_ascii       -0.0057  se 0.0078  t   -0.7  
+  all_caps        -0.0418  se 0.0039  t  -10.8  
+  ticker_eq_name  +0.0117  se 0.0037  t   +3.2  
+  us_hours        -0.0052  se 0.0034  t   -1.5  
+
+== log1p(V SOL)  (n=33,789, creators=16,602, mean y 1.486)
+  const           +1.4065  se 0.0580  t  +24.3  
+  x_post          +0.0249  se 0.0627  t   +0.4  x1.03
+  x_profile       -0.3028  se 0.0551  t   -5.5  x0.74
+  x_other         -0.2678  se 0.1545  t   -1.7  x0.77
+  website         +0.3408  se 0.0400  t   +8.5  x1.41
+  telegram        +0.1855  se 0.0902  t   +2.1  x1.20
+  description     -0.3125  se 0.0477  t   -6.5  x0.73
+  prior_1_4       -0.6929  se 0.0347  t  -20.0  x0.50
+  prior_5plus     -0.5320  se 0.0583  t   -9.1  x0.59
+  devbuy_le1      +0.3418  se 0.0527  t   +6.5  x1.41
+  devbuy_gt1      +1.3687  se 0.0672  t  +20.4  x3.93
+  tool_j7         +0.2288  se 0.0626  t   +3.7  x1.26
+  tool_other      +0.4881  se 0.0573  t   +8.5  x1.63
+  hot_copy        -0.1784  se 0.0329  t   -5.4  x0.84
+  non_ascii       +0.2339  se 0.0770  t   +3.0  x1.26
+  all_caps        -0.5101  se 0.0579  t   -8.8  x0.60
+  ticker_eq_name  +0.2346  se 0.0481  t   +4.9  x1.26
+  us_hours        +0.0238  se 0.0323  t   +0.7  x1.02

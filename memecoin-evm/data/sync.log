@@ -1,0 +1,714 @@
+resume: 0 pairs already collected
+head=127136174 PairCreated [127124974,127135264]
+  factory chunk 127124974 FAIL HTTP Error 403: Forbidden
+new WBNB candidate pairs: 103
+  [20/103] kept=12 failed=0
+  [40/103] kept=18 failed=0
+  [60/103] kept=31 failed=0
+  [80/103] kept=37 failed=0
+  [100/103] kept=42 failed=0
+COLLECT DONE kept=42 failed=0 total_rows=42
+resume: 42 pairs already collected
+head=127140157 PairCreated [127128957,127139247]
+  GAP: factory blocks 127128957-127129956 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127129957-127130956 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 126
+  [20/126] kept=0 failed=0
+  [40/126] kept=0 failed=0
+  [60/126] kept=7 failed=0
+  [80/126] kept=16 failed=0
+  [100/126] kept=23 failed=0
+  [120/126] kept=25 failed=0
+COLLECT DONE kept=26 failed=0 total_rows=68
+resume: 68 pairs already collected
+head=127150162 PairCreated [127138962,127149252]
+  GAP: factory blocks 127138962-127139961 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127139962-127140961 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127140962-127141961 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127141962-127142961 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127142962-127143961 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127143962-127144961 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127144962-127145961 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127145962-127146961 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127146962-127147961 unrecoverable (HTTP Error 403: Forbidden)
+resume: 126 pairs already collected
+head=127182366 PairCreated [127171166,127181456]
+  GAP: factory blocks 127171166-127172165 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127172166-127173165 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 717
+  [20/717] kept=0 failed=0
+  [40/717] kept=0 failed=0
+  [60/717] kept=0 failed=0
+  [80/717] kept=0 failed=0
+  [100/717] kept=0 failed=0
+  [120/717] kept=0 failed=0
+  [140/717] kept=0 failed=0
+  [160/717] kept=0 failed=0
+  [180/717] kept=0 failed=0
+  [200/717] kept=0 failed=0
+  [220/717] kept=0 failed=0
+  [240/717] kept=0 failed=0
+  [260/717] kept=0 failed=0
+  [280/717] kept=0 failed=0
+  [300/717] kept=0 failed=0
+  [320/717] kept=0 failed=0
+  [340/717] kept=0 failed=0
+  [360/717] kept=0 failed=0
+  [380/717] kept=0 failed=0
+  [400/717] kept=0 failed=0
+  [420/717] kept=0 failed=0
+  [440/717] kept=0 failed=0
+  [460/717] kept=0 failed=0
+  [480/717] kept=0 failed=0
+  [500/717] kept=0 failed=0
+  [520/717] kept=0 failed=0
+  [540/717] kept=0 failed=0
+  [560/717] kept=0 failed=0
+  [580/717] kept=2 failed=0
+  [600/717] kept=3 failed=0
+  [620/717] kept=3 failed=0
+  [640/717] kept=4 failed=0
+  [660/717] kept=6 failed=0
+  [680/717] kept=10 failed=0
+  [700/717] kept=12 failed=0
+COLLECT DONE kept=12 failed=0 deadline_skipped=0 elapsed=884s total_rows=138
+resume: 138 pairs already collected
+head=127193658 PairCreated [127182458,127192748]
+  GAP: factory blocks 127182458-127183457 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127183458-127184457 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 699
+  [20/699] kept=1 failed=0
+  [40/699] kept=2 failed=0
+  [60/699] kept=4 failed=0
+  [80/699] kept=6 failed=0
+  [100/699] kept=7 failed=0
+  [120/699] kept=7 failed=0
+  [140/699] kept=8 failed=0
+  [160/699] kept=8 failed=0
+  [180/699] kept=10 failed=0
+  [200/699] kept=13 failed=0
+  [220/699] kept=16 failed=0
+  [240/699] kept=17 failed=0
+  [260/699] kept=17 failed=0
+  [280/699] kept=21 failed=0
+  [300/699] kept=22 failed=0
+  [320/699] kept=22 failed=0
+  [340/699] kept=22 failed=0
+  [360/699] kept=24 failed=0
+  [380/699] kept=27 failed=0
+  [400/699] kept=29 failed=0
+  [420/699] kept=31 failed=0
+  [440/699] kept=34 failed=0
+  [460/699] kept=34 failed=0
+  [480/699] kept=37 failed=0
+  [500/699] kept=37 failed=0
+  [520/699] kept=37 failed=0
+  [540/699] kept=40 failed=0
+  [560/699] kept=42 failed=0
+  [580/699] kept=45 failed=0
+  [600/699] kept=47 failed=0
+  [620/699] kept=49 failed=0
+  [640/699] kept=50 failed=0
+  [660/699] kept=51 failed=0
+  [680/699] kept=54 failed=0
+COLLECT DONE kept=58 failed=0 deadline_skipped=0 elapsed=860s total_rows=196
+resume: 196 pairs already collected
+head=127204898 PairCreated [127193698,127203988]
+  GAP: factory blocks 127193698-127194697 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127194698-127195697 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 606
+  [20/606] kept=4 failed=0
+  [40/606] kept=5 failed=0
+  [60/606] kept=6 failed=0
+  [80/606] kept=9 failed=0
+  [100/606] kept=9 failed=0
+  [120/606] kept=16 failed=0
+  [140/606] kept=19 failed=0
+  [160/606] kept=24 failed=0
+  [180/606] kept=25 failed=0
+  [200/606] kept=27 failed=0
+  [220/606] kept=28 failed=0
+  [240/606] kept=31 failed=0
+  [260/606] kept=35 failed=0
+  [280/606] kept=38 failed=0
+  [300/606] kept=40 failed=0
+  [320/606] kept=43 failed=0
+  [340/606] kept=45 failed=0
+  [360/606] kept=48 failed=0
+  [380/606] kept=49 failed=0
+  [400/606] kept=49 failed=0
+  [420/606] kept=50 failed=0
+  [440/606] kept=52 failed=0
+  [460/606] kept=53 failed=0
+  [480/606] kept=56 failed=0
+  [500/606] kept=59 failed=0
+  [520/606] kept=60 failed=0
+  [540/606] kept=62 failed=0
+  [560/606] kept=64 failed=0
+  [580/606] kept=68 failed=0
+  [600/606] kept=71 failed=0
+COLLECT DONE kept=71 failed=0 deadline_skipped=0 elapsed=770s total_rows=267
+resume: 267 pairs already collected
+head=127215938 PairCreated [127204738,127215028]
+  GAP: factory blocks 127204738-127205737 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127205738-127206737 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 755
+  [20/755] kept=2 failed=0
+  [40/755] kept=2 failed=0
+  [60/755] kept=5 failed=0
+  [80/755] kept=7 failed=0
+  [100/755] kept=10 failed=0
+  [120/755] kept=13 failed=0
+  [140/755] kept=13 failed=0
+  [160/755] kept=15 failed=0
+  [180/755] kept=19 failed=0
+  [200/755] kept=23 failed=0
+  [220/755] kept=23 failed=0
+  [240/755] kept=24 failed=0
+  [260/755] kept=25 failed=0
+  [280/755] kept=28 failed=0
+  [300/755] kept=30 failed=0
+  [320/755] kept=32 failed=0
+  [340/755] kept=34 failed=0
+  [360/755] kept=36 failed=0
+  [380/755] kept=37 failed=0
+  [400/755] kept=37 failed=0
+  [420/755] kept=40 failed=0
+  [440/755] kept=41 failed=0
+  [460/755] kept=45 failed=0
+  [480/755] kept=46 failed=0
+  [500/755] kept=51 failed=0
+  [520/755] kept=53 failed=0
+  [540/755] kept=54 failed=0
+  [560/755] kept=56 failed=0
+  [580/755] kept=57 failed=0
+  [600/755] kept=57 failed=0
+  [620/755] kept=57 failed=0
+  [640/755] kept=58 failed=0
+  [660/755] kept=60 failed=0
+  [680/755] kept=62 failed=0
+  [700/755] kept=63 failed=0
+  [720/755] kept=65 failed=0
+  [740/755] kept=66 failed=0
+COLLECT DONE kept=67 failed=0 deadline_skipped=0 elapsed=959s total_rows=334
+resume: 334 pairs already collected
+head=127227393 PairCreated [127216193,127226483]
+  GAP: factory blocks 127216193-127217192 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127217193-127218192 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 820
+  [20/820] kept=1 failed=0
+  [40/820] kept=4 failed=0
+  [60/820] kept=5 failed=0
+  [80/820] kept=7 failed=0
+  [100/820] kept=9 failed=0
+  [120/820] kept=9 failed=0
+  [140/820] kept=9 failed=0
+  [160/820] kept=11 failed=0
+  [180/820] kept=12 failed=0
+  [200/820] kept=16 failed=0
+  [220/820] kept=19 failed=0
+  [240/820] kept=22 failed=0
+  [260/820] kept=23 failed=0
+  [280/820] kept=23 failed=0
+  [300/820] kept=26 failed=0
+  [320/820] kept=27 failed=0
+  [340/820] kept=30 failed=0
+  [360/820] kept=32 failed=0
+  [380/820] kept=33 failed=0
+  [400/820] kept=33 failed=0
+  [420/820] kept=34 failed=0
+  [440/820] kept=35 failed=0
+  [460/820] kept=36 failed=0
+  [480/820] kept=37 failed=0
+  [500/820] kept=41 failed=0
+  [520/820] kept=42 failed=0
+  [540/820] kept=43 failed=0
+  [560/820] kept=43 failed=0
+  [580/820] kept=43 failed=0
+  [600/820] kept=45 failed=0
+  [620/820] kept=46 failed=0
+  [640/820] kept=48 failed=0
+  [660/820] kept=50 failed=0
+  [680/820] kept=52 failed=0
+  [700/820] kept=52 failed=0
+  [720/820] kept=54 failed=0
+  [740/820] kept=54 failed=0
+  [760/820] kept=54 failed=0
+  [780/820] kept=56 failed=0
+  [800/820] kept=58 failed=0
+  [820/820] kept=58 failed=0
+COLLECT DONE kept=58 failed=0 deadline_skipped=0 elapsed=1074s total_rows=392
+resume: 392 pairs already collected
+head=127239108 PairCreated [127227908,127238198]
+  GAP: factory blocks 127227908-127228907 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127228908-127229907 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 659
+  [20/659] kept=0 failed=0
+  [40/659] kept=3 failed=0
+  [60/659] kept=6 failed=0
+  [80/659] kept=8 failed=0
+  [100/659] kept=9 failed=0
+  [120/659] kept=13 failed=0
+  [140/659] kept=13 failed=0
+  [160/659] kept=14 failed=0
+  [180/659] kept=14 failed=0
+  [200/659] kept=14 failed=0
+  [220/659] kept=16 failed=0
+  [240/659] kept=19 failed=0
+  [260/659] kept=20 failed=0
+  [280/659] kept=23 failed=0
+  [300/659] kept=26 failed=0
+  [320/659] kept=29 failed=0
+  [340/659] kept=33 failed=0
+  [360/659] kept=33 failed=0
+  [380/659] kept=35 failed=0
+  [400/659] kept=37 failed=0
+  [420/659] kept=38 failed=0
+  [440/659] kept=40 failed=0
+  [460/659] kept=43 failed=0
+  [480/659] kept=46 failed=0
+  [500/659] kept=47 failed=0
+  [520/659] kept=48 failed=0
+  [540/659] kept=50 failed=0
+  [560/659] kept=53 failed=0
+  [580/659] kept=57 failed=0
+  [600/659] kept=59 failed=0
+  [620/659] kept=60 failed=0
+  [640/659] kept=64 failed=0
+COLLECT DONE kept=66 failed=0 deadline_skipped=0 elapsed=909s total_rows=458
+resume: 458 pairs already collected
+head=127250451 PairCreated [127239251,127249541]
+  GAP: factory blocks 127239251-127240250 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127240251-127241250 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 389
+  [20/389] kept=1 failed=0
+  [40/389] kept=5 failed=0
+  [60/389] kept=10 failed=0
+  [80/389] kept=15 failed=0
+  [100/389] kept=22 failed=0
+  [120/389] kept=26 failed=0
+  [140/389] kept=32 failed=0
+  [160/389] kept=33 failed=0
+  [180/389] kept=35 failed=0
+  [200/389] kept=40 failed=0
+  [220/389] kept=43 failed=0
+  [240/389] kept=48 failed=0
+  [260/389] kept=53 failed=0
+  [280/389] kept=58 failed=0
+  [300/389] kept=61 failed=0
+  [320/389] kept=69 failed=0
+  [340/389] kept=70 failed=0
+  [360/389] kept=71 failed=0
+  [380/389] kept=74 failed=0
+COLLECT DONE kept=76 failed=0 deadline_skipped=0 elapsed=590s total_rows=534
+resume: 534 pairs already collected
+head=127261086 PairCreated [127249886,127260176]
+  GAP: factory blocks 127249886-127250885 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127250886-127251885 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 347
+  [20/347] kept=4 failed=0
+  [40/347] kept=6 failed=0
+  [60/347] kept=9 failed=0
+  [80/347] kept=9 failed=0
+  [100/347] kept=12 failed=0
+  [120/347] kept=16 failed=0
+  [140/347] kept=18 failed=0
+  [160/347] kept=25 failed=0
+  [180/347] kept=30 failed=0
+  [200/347] kept=36 failed=0
+  [220/347] kept=39 failed=0
+  [240/347] kept=41 failed=0
+  [260/347] kept=44 failed=0
+  [280/347] kept=48 failed=0
+  [300/347] kept=51 failed=0
+  [320/347] kept=54 failed=0
+  [340/347] kept=55 failed=0
+COLLECT DONE kept=56 failed=0 deadline_skipped=0 elapsed=524s total_rows=590
+resume: 590 pairs already collected
+head=127273265 PairCreated [127262065,127272355]
+  GAP: factory blocks 127262065-127263064 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127263065-127264064 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127264065-127265064 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127265065-127266064 unrecoverable (HTTP Error 403: Forbidden)
+  DEADLINE: abandoning factory scan at block 127266065
+new WBNB candidate pairs: 0
+COLLECT DONE kept=0 failed=0 deadline_skipped=0 elapsed=1663s total_rows=590
+resume: 590 pairs already collected
+head=127289450 PairCreated [127278250,127288540]
+  GAP: factory blocks 127278250-127279249 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127279250-127280249 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 143
+  [20/143] kept=9 failed=0
+  [40/143] kept=16 failed=0
+  [60/143] kept=30 failed=0
+  [80/143] kept=39 failed=0
+  [100/143] kept=46 failed=0
+  [120/143] kept=58 failed=0
+  [140/143] kept=65 failed=0
+COLLECT DONE kept=66 failed=0 deadline_skipped=0 elapsed=240s total_rows=656
+resume: 656 pairs already collected
+head=127299634 PairCreated [127288434,127298724]
+  GAP: factory blocks 127288434-127289433 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127289434-127290433 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 185
+  [20/185] kept=7 failed=0
+  [40/185] kept=19 failed=0
+  [60/185] kept=26 failed=0
+  [80/185] kept=32 failed=0
+  [100/185] kept=38 failed=0
+  [120/185] kept=45 failed=0
+  [140/185] kept=51 failed=0
+  [160/185] kept=57 failed=0
+  [180/185] kept=64 failed=0
+COLLECT DONE kept=67 failed=0 deadline_skipped=0 elapsed=292s total_rows=723
+resume: 723 pairs already collected
+head=127318194 PairCreated [127306994,127317284]
+  GAP: factory blocks 127306994-127307993 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127307994-127308993 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 162
+  [20/162] kept=6 failed=0
+  [40/162] kept=13 failed=0
+  [60/162] kept=19 failed=0
+  [80/162] kept=28 failed=0
+  [100/162] kept=31 failed=0
+  [120/162] kept=36 failed=0
+  [140/162] kept=44 failed=0
+  [160/162] kept=50 failed=0
+COLLECT DONE kept=52 failed=0 deadline_skipped=0 elapsed=292s total_rows=775
+resume: 775 pairs already collected
+head=127328174 PairCreated [127316974,127327264]
+new WBNB candidate pairs: 288
+  [1/288] 0x46031426f0 CHUNK FAIL (skipped)
+  [4/288] 0xe72f6de9dd CHUNK FAIL (skipped)
+  [5/288] 0x238e54ecf9 CHUNK FAIL (skipped)
+  [6/288] 0xd57c47dfd2 CHUNK FAIL (skipped)
+  [8/288] 0x54ac906ff5 CHUNK FAIL (skipped)
+  [10/288] 0x92f0e9de26 CHUNK FAIL (skipped)
+  [11/288] 0x3d37ffc740 CHUNK FAIL (skipped)
+  [12/288] 0xba6d11c76d CHUNK FAIL (skipped)
+  [13/288] 0xd4e4a7ef38 CHUNK FAIL (skipped)
+  [14/288] 0x3685089fea CHUNK FAIL (skipped)
+  [15/288] 0x2f4bb86a8f CHUNK FAIL (skipped)
+  [16/288] 0xe9c08c0711 CHUNK FAIL (skipped)
+  [17/288] 0x68d6230112 CHUNK FAIL (skipped)
+  [18/288] 0x4f3a8f44b1 CHUNK FAIL (skipped)
+  [19/288] 0xe21397c7ab CHUNK FAIL (skipped)
+  [20/288] 0xb263031bbd CHUNK FAIL (skipped)
+  [21/288] 0x0c778db0f0 CHUNK FAIL (skipped)
+  [22/288] 0x06248d9b18 CHUNK FAIL (skipped)
+  [23/288] 0xd914368af5 CHUNK FAIL (skipped)
+  [24/288] 0xd27f08d6a8 CHUNK FAIL (skipped)
+  [25/288] 0x52de8a2b91 CHUNK FAIL (skipped)
+  [26/288] 0xd0e918675e CHUNK FAIL (skipped)
+  [27/288] 0x88fa766183 CHUNK FAIL (skipped)
+  [28/288] 0x01f9182039 CHUNK FAIL (skipped)
+  [29/288] 0x6fbd6eb73c CHUNK FAIL (skipped)
+  [30/288] 0xcead888f52 CHUNK FAIL (skipped)
+  [31/288] 0xe012e440e3 CHUNK FAIL (skipped)
+  [32/288] 0x0f05641301 CHUNK FAIL (skipped)
+  [33/288] 0x2144b1760f CHUNK FAIL (skipped)
+  [34/288] 0x333697b20a CHUNK FAIL (skipped)
+  [35/288] 0xdd36019c57 CHUNK FAIL (skipped)
+  [36/288] 0x1a0642de9d CHUNK FAIL (skipped)
+  [37/288] 0x70e99af222 CHUNK FAIL (skipped)
+  [38/288] 0x4f3b882342 CHUNK FAIL (skipped)
+  [39/288] 0x8f30658c8e CHUNK FAIL (skipped)
+  [40/288] 0x4d267d334e CHUNK FAIL (skipped)
+  [41/288] 0x32952a4320 CHUNK FAIL (skipped)
+  [42/288] 0x42f81aa658 CHUNK FAIL (skipped)
+  [43/288] 0x5af525903b CHUNK FAIL (skipped)
+  [44/288] 0xd4ba89c931 CHUNK FAIL (skipped)
+  [45/288] 0x44c4134422 CHUNK FAIL (skipped)
+  [46/288] 0x24dc5d99f5 CHUNK FAIL (skipped)
+  [47/288] 0xf52c21b458 CHUNK FAIL (skipped)
+  [48/288] 0x68db05de78 CHUNK FAIL (skipped)
+  [49/288] 0x2c2131c484 CHUNK FAIL (skipped)
+  [50/288] 0xba3e117c1a CHUNK FAIL (skipped)
+  [51/288] 0x99478510cc CHUNK FAIL (skipped)
+  [52/288] 0xc06137e99a CHUNK FAIL (skipped)
+  [53/288] 0xc2dbfd0c6b CHUNK FAIL (skipped)
+  [54/288] 0x897fad2cec CHUNK FAIL (skipped)
+  [55/288] 0xced39d30ac CHUNK FAIL (skipped)
+  [56/288] 0x93cbddc369 CHUNK FAIL (skipped)
+  [57/288] 0xb91a6c6876 CHUNK FAIL (skipped)
+  [58/288] 0x18f3117e8e CHUNK FAIL (skipped)
+  [59/288] 0xce149f4943 CHUNK FAIL (skipped)
+  [60/288] 0xadaeabe9ab CHUNK FAIL (skipped)
+  [61/288] 0xe3079d07c4 CHUNK FAIL (skipped)
+  [62/288] 0xa9d6cb9038 CHUNK FAIL (skipped)
+  [63/288] 0x4772463f6e CHUNK FAIL (skipped)
+  [64/288] 0x0330d25356 CHUNK FAIL (skipped)
+  [65/288] 0x317335cb53 CHUNK FAIL (skipped)
+  [66/288] 0xcf6562cb38 CHUNK FAIL (skipped)
+  [67/288] 0x5f1266a8e0 CHUNK FAIL (skipped)
+  [68/288] 0x1a7dcebe32 CHUNK FAIL (skipped)
+  [69/288] 0xb5bb27f79e CHUNK FAIL (skipped)
+  [70/288] 0xd27c1a9f26 CHUNK FAIL (skipped)
+  [71/288] 0x78a1c8cab5 CHUNK FAIL (skipped)
+  [72/288] 0x116b5eb299 CHUNK FAIL (skipped)
+  [73/288] 0x922f764428 CHUNK FAIL (skipped)
+  [74/288] 0x987c123e7c CHUNK FAIL (skipped)
+  [75/288] 0x17099830df CHUNK FAIL (skipped)
+  DEADLINE: 213 pairs left unfetched this cycle
+COLLECT DONE kept=1 failed=71 deadline_skipped=213 elapsed=1211s total_rows=776
+resume: 776 pairs already collected
+head=127340197 PairCreated [127328997,127339287]
+  GAP: factory blocks 127328997-127329996 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127329997-127330996 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 345
+  [20/345] kept=6 failed=0
+  [40/345] kept=11 failed=0
+  [60/345] kept=21 failed=0
+  [80/345] kept=22 failed=0
+  [100/345] kept=25 failed=0
+  [120/345] kept=28 failed=0
+  [140/345] kept=29 failed=0
+  [160/345] kept=30 failed=0
+  [180/345] kept=35 failed=0
+  [200/345] kept=38 failed=0
+  [220/345] kept=41 failed=0
+  [240/345] kept=47 failed=0
+  [260/345] kept=47 failed=0
+  [280/345] kept=48 failed=0
+  [300/345] kept=50 failed=0
+  [320/345] kept=53 failed=0
+  [340/345] kept=56 failed=0
+COLLECT DONE kept=56 failed=0 deadline_skipped=0 elapsed=470s total_rows=832
+resume: 832 pairs already collected
+head=127350572 PairCreated [127339372,127349662]
+  GAP: factory blocks 127339372-127340371 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127340372-127341371 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 302
+  [20/302] kept=2 failed=0
+  [40/302] kept=5 failed=0
+  [60/302] kept=10 failed=0
+  [80/302] kept=14 failed=0
+  [100/302] kept=16 failed=0
+  [120/302] kept=21 failed=0
+  [140/302] kept=24 failed=0
+  [160/302] kept=28 failed=0
+  [180/302] kept=30 failed=0
+  [200/302] kept=31 failed=0
+  [220/302] kept=35 failed=0
+  [240/302] kept=41 failed=0
+  [260/302] kept=46 failed=0
+  [280/302] kept=48 failed=0
+  [300/302] kept=55 failed=0
+COLLECT DONE kept=55 failed=0 deadline_skipped=0 elapsed=420s total_rows=887
+resume: 887 pairs already collected
+head=127360838 PairCreated [127349638,127359928]
+  GAP: factory blocks 127349638-127350637 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127350638-127351637 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 256
+  [20/256] kept=5 failed=0
+  [40/256] kept=11 failed=0
+  [60/256] kept=13 failed=0
+  [80/256] kept=22 failed=0
+  [100/256] kept=25 failed=0
+  [120/256] kept=28 failed=0
+  [140/256] kept=32 failed=0
+  [160/256] kept=34 failed=0
+  [180/256] kept=40 failed=0
+  [200/256] kept=42 failed=0
+  [220/256] kept=47 failed=0
+  [240/256] kept=49 failed=0
+COLLECT DONE kept=50 failed=0 deadline_skipped=0 elapsed=369s total_rows=937
+resume: 937 pairs already collected
+head=127370988 PairCreated [127359788,127370078]
+  GAP: factory blocks 127359788-127360787 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127360788-127361787 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 333
+  [20/333] kept=6 failed=0
+  [40/333] kept=8 failed=0
+  [60/333] kept=13 failed=0
+  [80/333] kept=16 failed=0
+  [100/333] kept=19 failed=0
+  [120/333] kept=20 failed=0
+  [140/333] kept=25 failed=0
+  [160/333] kept=28 failed=0
+  [180/333] kept=33 failed=0
+  [200/333] kept=36 failed=0
+  [220/333] kept=40 failed=0
+  [240/333] kept=42 failed=0
+  [260/333] kept=46 failed=0
+  [280/333] kept=47 failed=0
+  [300/333] kept=52 failed=0
+  [320/333] kept=56 failed=0
+COLLECT DONE kept=57 failed=0 deadline_skipped=0 elapsed=461s total_rows=994
+resume: 994 pairs already collected
+head=127381310 PairCreated [127370110,127380400]
+  GAP: factory blocks 127370110-127371109 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127371110-127372109 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 482
+  [20/482] kept=2 failed=0
+  [40/482] kept=2 failed=0
+  [60/482] kept=6 failed=0
+  [80/482] kept=10 failed=0
+  [100/482] kept=11 failed=0
+  [120/482] kept=15 failed=0
+  [140/482] kept=16 failed=0
+  [160/482] kept=18 failed=0
+  [180/482] kept=20 failed=0
+  [200/482] kept=22 failed=0
+  [220/482] kept=23 failed=0
+  [240/482] kept=24 failed=0
+  [260/482] kept=25 failed=0
+  [280/482] kept=26 failed=0
+  [300/482] kept=28 failed=0
+  [320/482] kept=29 failed=0
+  [340/482] kept=31 failed=0
+  [360/482] kept=34 failed=0
+  [380/482] kept=37 failed=0
+  [400/482] kept=39 failed=0
+  [420/482] kept=42 failed=0
+  [440/482] kept=45 failed=0
+  [460/482] kept=46 failed=0
+  [480/482] kept=50 failed=0
+COLLECT DONE kept=50 failed=0 deadline_skipped=0 elapsed=633s total_rows=1044
+resume: 1044 pairs already collected
+head=127392047 PairCreated [127380847,127391137]
+  GAP: factory blocks 127380847-127381846 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127381847-127382846 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 341
+  [20/341] kept=2 failed=0
+  [40/341] kept=4 failed=0
+  [60/341] kept=8 failed=0
+  [80/341] kept=10 failed=0
+  [100/341] kept=14 failed=0
+  [120/341] kept=16 failed=0
+  [140/341] kept=17 failed=0
+  [160/341] kept=20 failed=0
+  [180/341] kept=25 failed=0
+  [200/341] kept=28 failed=0
+  [220/341] kept=29 failed=0
+  [240/341] kept=34 failed=0
+  [260/341] kept=39 failed=0
+  [280/341] kept=46 failed=0
+  [300/341] kept=49 failed=0
+  [320/341] kept=54 failed=0
+  [340/341] kept=57 failed=0
+COLLECT DONE kept=57 failed=0 deadline_skipped=0 elapsed=468s total_rows=1101
+resume: 1101 pairs already collected
+head=127402419 PairCreated [127391219,127401509]
+  GAP: factory blocks 127391219-127392218 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127392219-127393218 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 303
+  [20/303] kept=1 failed=0
+  [40/303] kept=9 failed=0
+  [60/303] kept=11 failed=0
+  [80/303] kept=16 failed=0
+  [100/303] kept=21 failed=0
+  [120/303] kept=27 failed=0
+  [140/303] kept=32 failed=0
+  [160/303] kept=35 failed=0
+  [180/303] kept=40 failed=0
+  [200/303] kept=44 failed=0
+  [220/303] kept=44 failed=0
+  [240/303] kept=45 failed=0
+  [260/303] kept=51 failed=0
+  [280/303] kept=58 failed=0
+  [300/303] kept=63 failed=0
+COLLECT DONE kept=64 failed=0 deadline_skipped=0 elapsed=428s total_rows=1165
+resume: 1165 pairs already collected
+head=127412702 PairCreated [127401502,127411792]
+  GAP: factory blocks 127401502-127402501 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127402502-127403501 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 264
+  [20/264] kept=3 failed=0
+  [40/264] kept=7 failed=0
+  [60/264] kept=12 failed=0
+  [80/264] kept=18 failed=0
+  [100/264] kept=25 failed=0
+  [120/264] kept=32 failed=0
+  [140/264] kept=34 failed=0
+  [160/264] kept=40 failed=0
+  [180/264] kept=45 failed=0
+  [200/264] kept=51 failed=0
+  [220/264] kept=52 failed=0
+  [240/264] kept=54 failed=0
+  [260/264] kept=63 failed=0
+COLLECT DONE kept=63 failed=0 deadline_skipped=0 elapsed=392s total_rows=1228
+resume: 1228 pairs already collected
+head=127422906 PairCreated [127411706,127421996]
+  GAP: factory blocks 127411706-127412705 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127412706-127413705 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 282
+  [20/282] kept=5 failed=0
+  [40/282] kept=9 failed=0
+  [60/282] kept=14 failed=0
+  [80/282] kept=22 failed=0
+  [100/282] kept=25 failed=0
+  [120/282] kept=27 failed=0
+  [140/282] kept=31 failed=0
+  [160/282] kept=34 failed=0
+  [180/282] kept=38 failed=0
+  [200/282] kept=41 failed=0
+  [220/282] kept=44 failed=0
+  [240/282] kept=51 failed=0
+  [260/282] kept=54 failed=0
+  [280/282] kept=57 failed=0
+COLLECT DONE kept=58 failed=0 deadline_skipped=0 elapsed=402s total_rows=1286
+resume: 1286 pairs already collected
+head=127433132 PairCreated [127421932,127432222]
+  GAP: factory blocks 127421932-127422931 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127422932-127423931 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 238
+  [20/238] kept=0 failed=0
+  [40/238] kept=2 failed=0
+  [60/238] kept=8 failed=0
+  [80/238] kept=10 failed=0
+  [100/238] kept=17 failed=0
+  [120/238] kept=23 failed=0
+  [140/238] kept=28 failed=0
+  [160/238] kept=34 failed=0
+  [180/238] kept=40 failed=0
+  [200/238] kept=45 failed=0
+  [220/238] kept=53 failed=0
+COLLECT DONE kept=57 failed=0 deadline_skipped=0 elapsed=348s total_rows=1343
+resume: 1343 pairs already collected
+head=127443234 PairCreated [127432034,127442324]
+  GAP: factory blocks 127432034-127433033 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127433034-127434033 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 162
+  [20/162] kept=6 failed=0
+  [40/162] kept=15 failed=0
+  [60/162] kept=24 failed=0
+  [80/162] kept=34 failed=0
+  [100/162] kept=43 failed=0
+  [120/162] kept=47 failed=0
+  [140/162] kept=51 failed=0
+  [160/162] kept=63 failed=0
+COLLECT DONE kept=64 failed=0 deadline_skipped=0 elapsed=262s total_rows=1407
+resume: 1407 pairs already collected
+head=127453149 PairCreated [127441949,127452239]
+  GAP: factory blocks 127441949-127442948 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127442949-127443948 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 102
+  [20/102] kept=12 failed=0
+  [40/102] kept=23 failed=0
+  [60/102] kept=32 failed=0
+  [80/102] kept=40 failed=0
+  [100/102] kept=51 failed=0
+COLLECT DONE kept=52 failed=0 deadline_skipped=0 elapsed=186s total_rows=1459
+resume: 1459 pairs already collected
+head=127465539 PairCreated [127454339,127464629]
+  GAP: factory blocks 127454339-127455338 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127455339-127456338 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 114
+  [20/114] kept=11 failed=0
+  [40/114] kept=21 failed=0
+  [60/114] kept=32 failed=0
+  [80/114] kept=46 failed=0
+  [100/114] kept=56 failed=0
+COLLECT DONE kept=62 failed=0 deadline_skipped=0 elapsed=188s total_rows=1521
+resume: 1521 pairs already collected
+head=127482148 PairCreated [127470948,127481238]
+  GAP: factory blocks 127470948-127471947 unrecoverable (HTTP Error 403: Forbidden)
+  GAP: factory blocks 127471948-127472947 unrecoverable (HTTP Error 403: Forbidden)
+new WBNB candidate pairs: 113
+  [20/113] kept=10 failed=0
+  [40/113] kept=20 failed=0
+  [60/113] kept=31 failed=0
+  [80/113] kept=46 failed=0
+  [100/113] kept=60 failed=0
+COLLECT DONE kept=67 failed=0 deadline_skipped=0 elapsed=191s total_rows=1588

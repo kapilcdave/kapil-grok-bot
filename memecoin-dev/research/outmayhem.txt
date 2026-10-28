@@ -1,0 +1,20 @@
+
+#### tape-20261010T225715Z.jsonl.gz: 32,625 launches, Mayhem 10,935 (33.5%)
+agent in the launch block: 0.0% of Mayhem coins; agent share of Mayhem coins' volume: 70.0%
+  mayhem   n 10,935 | P(broad sniper) 3.4% | median non-agent fee 0.00345 mean 0.00743 | median NET -0.05509 mean (top1% cap) -0.06069
+  standard n 21,690 | P(broad sniper) 24.5% | median non-agent fee 0.00638 mean 0.11369 | median NET -0.00516 mean (top1% cap) +0.35497
+  within creator [log1p(non-agent bot SOL)] (288 creators, 6,355): mayhem +0.2183 (t +5.4) x1.24
+  within creator [log1p(human SOL)] (288 creators, 6,355): mayhem -0.0377 (t -2.8) x0.96
+  within creator [P(broad sniper, not agent)] (288 creators, 6,355): mayhem -0.0666 (t -5.0)
+  within creator [creator fee SOL (winsor)] (288 creators, 6,355): mayhem -0.0003 (t -0.2)
+  within creator [dev NET SOL (winsor)] (288 creators, 6,355): mayhem +0.0085 (t +0.3)
+
+#### tape-20261011T225728Z.jsonl.gz: 33,789 launches, Mayhem 9,013 (26.7%)
+agent in the launch block: 0.0% of Mayhem coins; agent share of Mayhem coins' volume: 68.6%
+  mayhem   n  9,013 | P(broad sniper) 0.1% | median non-agent fee 0.00346 mean 0.00850 | median NET -0.04904 mean (top1% cap) -0.07796
+  standard n 24,776 | P(broad sniper) 21.6% | median non-agent fee 0.00706 mean 0.10742 | median NET -0.00518 mean (top1% cap) +0.35886
+  within creator [log1p(non-agent bot SOL)] (260 creators, 4,985): mayhem +0.3538 (t +8.1) x1.42
+  within creator [log1p(human SOL)] (260 creators, 4,985): mayhem -0.0263 (t -2.4) x0.97
+  within creator [P(broad sniper, not agent)] (260 creators, 4,985): mayhem -0.0544 (t -4.1)
+  within creator [creator fee SOL (winsor)] (260 creators, 4,985): mayhem +0.0008 (t +0.5)
+  within creator [dev NET SOL (winsor)] (260 creators, 4,985): mayhem -0.0173 (t -0.7)

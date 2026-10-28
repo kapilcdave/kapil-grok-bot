@@ -1,0 +1,19 @@
+40,003 launches; 31,546 (78.9%) had ZERO non-broad early buying
+
+=== dev P&L by dose, counterparties restricted to genuine broad wallets ===
+    dose       n      mean    median   P(>0)       p10   |   ALL n    median
+   0-0.1  10,420   +0.0015   -0.0002   0.081   -0.0025   |  11,305   -0.0002
+ 0.1-0.5   4,552   +0.0277   -0.0053   0.262   -0.0123   |   5,574   -0.0049
+   0.5-1   6,037   +0.1173   -0.0147   0.432   -0.0250   |   7,795   +0.0066
+     1-2   3,650   +0.2357   +0.0376   0.553   -0.0494   |   5,086   +0.0813
+     2-5   5,201   +1.0068   +0.5639   0.688   -0.1235   |   7,942   +0.8408
+    5-10     658   +2.0667   +0.6043   0.614   -0.1734   |   1,001   +1.2581
+     >10     864   -0.6354   -2.1251   0.144   -2.1251   |   1,102   -2.1251
+
+=== what our affordable dose actually pays (0.4-0.7 SOL, one-launch creators, clean) ===
+n=1,620 mean +0.0605 median -0.0092 P(>0) 0.439 p10 -0.0164 p90 +0.1800
+  our two live draws were -0.0234 and -0.0066 SOL -> percentile of this distribution: 2.2% and 51.9%
+
+=== bankroll arithmetic at the best dose ===
+0.5-1: median -0.0147 SOL/launch, p10 -0.0250, needs 0.5-1 SOL working capital (bankroll 0.6381)
+2-5: median +0.5639 SOL/launch, p10 -0.1235, needs 2-5 SOL working capital (bankroll 0.6381)
