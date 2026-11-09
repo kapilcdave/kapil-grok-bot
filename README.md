@@ -15,10 +15,13 @@ The team currently does Solana memecoin trading research. Later, Kapil will add 
 | Smart Money Grok Bot | Tracking top Solana wallets. | `findings/smart-money/` |
 | Git Grok Bot | Repository and source-control keeper. Owns structure, commits, and pull requests. | Decisions and logs go in `notes/`. |
 
+What each research bot owns, and how a coin moves between them, is in [`agents/`](agents/). Shared rules are there once. Which of the current jobs should be plain scripts is [`agents/SCRIPTS_VS_AGENTS.md`](agents/SCRIPTS_VS_AGENTS.md).
+
 ## Folder layout
 
 ```
 .
+├── agents/          Per-bot instructions
 ├── code/            Scripts and tools
 ├── findings/        Research notes and reports, one folder per research bot
 │   ├── chief-of-staff/
